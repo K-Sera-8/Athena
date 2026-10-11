@@ -7,6 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
   initLanguage();
   initNavbar();
   initActiveNav();
+  initTypewriterQuote();
+  initScrollReveal();
   initProjectDrawers();
   initEmailCopy();
   initBackToTop();
@@ -63,6 +65,9 @@ function setLanguage(lang) {
     }
   });
 
+  // Re-trigger typewriter for the active language quote
+  initTypewriterQuote();
+
   // Save preference
   try {
     localStorage.setItem('athena_lang', lang);
@@ -75,6 +80,68 @@ function setLanguage(lang) {
     const url = new URL(window.location.href);
     url.searchParams.set('lang', lang);
     window.history.replaceState(null, '', url.toString());
+  }
+}
+
+/**
+ * Typewriter Animation for Hero Quote
+ */
+let typewriterTimeout = null;
+
+function initTypewriterQuote() {
+  const quoteTarget = document.getElementById('typewriterText');
+  if (!quoteTarget) return;
+
+  const isThai = document.body.classList.contains('lang-th');
+  const fullText = isThai 
+    ? '“เข้าใจเศรษฐศาสตร์อย่างถ่องแท้ ในวิธีที่เรียบง่าย”' 
+    : '“Master Economics, the Simple Way.”';
+
+  // Clear existing timeout if switching languages rapidly
+  if (typewriterTimeout) {
+    clearTimeout(typewriterTimeout);
+  }
+
+  quoteTarget.textContent = '';
+  let charIndex = 0;
+
+  function typeChar() {
+    if (charIndex < fullText.length) {
+      quoteTarget.textContent += fullText.charAt(charIndex);
+      charIndex++;
+      typewriterTimeout = setTimeout(typeChar, isThai ? 40 : 48);
+    }
+  }
+
+  typeChar();
+}
+
+/**
+ * Smooth Scroll Reveal Animations
+ */
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll('.reveal-on-scroll');
+  if (!revealElements.length) return;
+
+  // Check if browser supports IntersectionObserver
+  if ('IntersectionObserver' in window) {
+    const observer = new IntersectionObserver((entries, obs) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-revealed');
+          obs.unobserve(entry.target);
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    revealElements.forEach(el => observer.observe(el));
+  } else {
+    // Fallback for older browsers
+    revealElements.forEach(el => el.classList.add('is-revealed'));
   }
 }
 

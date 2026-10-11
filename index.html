@@ -19,6 +19,10 @@
 </head>
 <body class="lang-en">
 
+  <!-- Ambient Animated Glow Elements -->
+  <div class="ambient-glow-sphere sphere-1" aria-hidden="true"></div>
+  <div class="ambient-glow-sphere sphere-2" aria-hidden="true"></div>
+
   <!-- ========================================================================
        TOP STICKY NAVIGATION
        ======================================================================== -->
@@ -84,87 +88,161 @@
   </nav>
 
   <!-- ========================================================================
-       SECTION 1: HERO
+       SECTION 1: HERO (Enhanced 2-Column Dashboard Layout)
        ======================================================================== -->
   <header id="hero" class="hero-section">
-    <div class="hero-glow"></div>
-    <div class="container hero-content">
-      
-      <!-- Quote Badge -->
-      <div class="hero-quote-badge">
-        <span class="hero-quote-text i18n-en">“Master Economics, the Simple Way.”</span>
-        <span class="hero-quote-text i18n-th">“เข้าใจเศรษฐศาสตร์อย่างถ่องแท้ ในวิธีที่เรียบง่าย”</span>
-      </div>
-
-      <!-- Hero Profile Row -->
-      <div class="hero-profile-row">
-        <div class="hero-logo-frame">
-          <img src="assets/black.png" alt="Phatthanan Siangpro Emblem" class="hero-logo-img">
-        </div>
-        <div class="hero-header-text">
-          <div class="hero-greeting i18n-en">// Researcher & Auditor Portfolio</div>
-          <div class="hero-greeting i18n-th">// แฟ้มผลงานวิจัยและการตรวจสอบภาครัฐ</div>
+    <div class="container">
+      <div class="hero-grid">
+        
+        <!-- Left Column: Primary Identity & Call to Action -->
+        <div class="hero-content">
           
-          <h1 class="hero-name">Phatthanan Siangpro</h1>
-          
-          <div class="hero-identity i18n-en">
-            Economics Graduate Student | Public Finance | Policy Analysis | Econometrics
+          <!-- Animated Typewriter Quote Badge -->
+          <div class="hero-quote-badge">
+            <span id="typewriterText" class="hero-quote-text">“Master Economics, the Simple Way.”</span>
+            <span class="typewriter-cursor"></span>
           </div>
-          <div class="hero-identity i18n-th">
-            นักศึกษาปริญญาโทเศรษฐศาสตร์ | การคลังสาธารณะ | การวิเคราะห์นโยบาย | เศรษฐมิติ
+
+          <!-- Hero Profile Row -->
+          <div class="hero-profile-row">
+            <div class="hero-logo-frame">
+              <img src="assets/black.png" alt="Phatthanan Siangpro Emblem" class="hero-logo-img">
+            </div>
+            <div class="hero-header-text">
+              <div class="hero-greeting i18n-en">// Researcher & Auditor Portfolio</div>
+              <div class="hero-greeting i18n-th">// แฟ้มผลงานวิจัยและการตรวจสอบภาครัฐ</div>
+              
+              <h1 class="hero-name">Phatthanan Siangpro</h1>
+              
+              <div class="hero-identity i18n-en">
+                Economics Graduate Student | Public Finance | Policy Analysis | Econometrics
+              </div>
+              <div class="hero-identity i18n-th">
+                นักศึกษาปริญญาโทเศรษฐศาสตร์ | การคลังสาธารณะ | การวิเคราะห์นโยบาย | เศรษฐมิติ
+              </div>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <p class="hero-description i18n-en">
+            I study how economic ideas, public institutions, and data can explain real-world decisions.
+          </p>
+          <p class="hero-description i18n-th">
+            ฉันศึกษาว่าแนวคิดทางเศรษฐศาสตร์ สถาบันภาครัฐ และข้อมูลเชิงประจักษ์ สามารถอธิบายและชี้นำการตัดสินใจในโลกแห่งความเป็นจริงได้อย่างไร
+          </p>
+
+          <!-- Action Buttons -->
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              <span class="i18n-en">View Projects</span>
+              <span class="i18n-th">ดูผลงานวิจัย</span>
+              <span>&darr;</span>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <span class="i18n-en">Contact</span>
+              <span class="i18n-th">ติดต่อ</span>
+              <span>&rarr;</span>
+            </a>
+          </div>
+
+          <!-- Research Metadata Badges -->
+          <div class="hero-tags i18n-en">
+            <span class="tag-label">Specializations:</span>
+            <span class="tag-badge">#PublicFinance</span>
+            <span class="tag-badge">#PolicyAnalysis</span>
+            <span class="tag-badge">#CausalEconometrics</span>
+            <span class="tag-badge">#AuditAndGovernance</span>
+            <span class="tag-badge">#PensionReform</span>
+            <span class="tag-badge">#AIInEconomics</span>
+          </div>
+          <div class="hero-tags i18n-th">
+            <span class="tag-label">สาขาความเชี่ยวชาญ:</span>
+            <span class="tag-badge">#การคลังสาธารณะ</span>
+            <span class="tag-badge">#การวิเคราะห์นโยบาย</span>
+            <span class="tag-badge">#เศรษฐมิติเชิงสาเหตุ</span>
+            <span class="tag-badge">#การตรวจสอบและธรรมาภิบาล</span>
+            <span class="tag-badge">#การปฏิรูประบบบำนาญ</span>
+            <span class="tag-badge">#AIเพื่องานเศรษฐศาสตร์</span>
+          </div>
+
+        </div>
+
+        <!-- Right Column: Research Dashboard & Quant Terminal Card -->
+        <div class="hero-dashboard-card">
+          <div class="terminal-header">
+            <div class="terminal-dots">
+              <span class="terminal-dot dot-red"></span>
+              <span class="terminal-dot dot-yellow"></span>
+              <span class="terminal-dot dot-green"></span>
+            </div>
+            <span class="terminal-title">RESEARCH_DASHBOARD // v2.6</span>
+            <div class="terminal-status-live">
+              <span class="status-pulse"></span>
+              <span>LIVE</span>
+            </div>
+          </div>
+
+          <div class="terminal-body">
+            <!-- 4 Dashboard Metric Stat Pills -->
+            <div class="stats-grid">
+              
+              <div class="stat-box">
+                <div class="stat-number">02</div>
+                <div class="stat-label i18n-en">Featured Treatises</div>
+                <div class="stat-label i18n-th">บทความวิเคราะห์เด่น</div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-number">04</div>
+                <div class="stat-label i18n-en">Research Pillars</div>
+                <div class="stat-label i18n-th">เสาหลักงานวิจัย</div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-number" style="font-size: 1.25rem;">AUDIT</div>
+                <div class="stat-label i18n-en">Public Governance</div>
+                <div class="stat-label i18n-th">การตรวจสอบภาครัฐ</div>
+              </div>
+
+              <div class="stat-box">
+                <div class="stat-number" style="font-size: 1.25rem;">CAUSAL</div>
+                <div class="stat-label i18n-en">Empirical Methods</div>
+                <div class="stat-label i18n-th">เศรษฐมิติเชิงสาเหตุ</div>
+              </div>
+
+            </div>
+
+            <!-- Terminal Code Query View -->
+            <div class="terminal-code">
+              <div><span class="code-comment"># Active Academic Agenda</span></div>
+              <div><span class="code-prompt">&gt;</span> <span class="code-keyword">let</span> scholar = {</div>
+              <div>&nbsp;&nbsp;focus: <span class="code-string">"Public_Finance &amp; Pension_Reform"</span>,</div>
+              <div>&nbsp;&nbsp;methods: [<span class="code-string">"DiD"</span>, <span class="code-string">"RDD"</span>, <span class="code-string">"Game_Theory"</span>, <span class="code-string">"NLP"</span>],</div>
+              <div>&nbsp;&nbsp;target: <span class="code-string">"Sovereign_Fiscal_Sustainability"</span></div>
+              <div>};</div>
+              <div><span class="code-prompt">&gt;</span> scholar.<span class="code-keyword">runAnalysis</span>(); <span class="code-comment">// 200 OK</span></div>
+            </div>
+
+            <!-- Terminal Footer Links -->
+            <div class="terminal-footer-link">
+              <span class="i18n-en">Repository: GitHub Pages</span>
+              <span class="i18n-th">เผยแพร่บน: GitHub Pages</span>
+              <a href="https://github.com/K-Sera-8/Athena" target="_blank" rel="noopener noreferrer" class="terminal-github-pill">
+                <span>&#9881; Athena Repo &rarr;</span>
+              </a>
+            </div>
+
           </div>
         </div>
-      </div>
 
-      <!-- Description -->
-      <p class="hero-description i18n-en">
-        I study how economic ideas, public institutions, and data can explain real-world decisions.
-      </p>
-      <p class="hero-description i18n-th">
-        ฉันศึกษาว่าแนวคิดทางเศรษฐศาสตร์ สถาบันภาครัฐ และข้อมูลเชิงประจักษ์ สามารถอธิบายและชี้นำการตัดสินใจในโลกแห่งความเป็นจริงได้อย่างไร
-      </p>
-
-      <!-- Action Buttons -->
-      <div class="hero-actions">
-        <a href="#projects" class="btn btn-primary">
-          <span class="i18n-en">View Projects</span>
-          <span class="i18n-th">ดูผลงานวิจัย</span>
-          <span>&darr;</span>
-        </a>
-        <a href="#contact" class="btn btn-outline">
-          <span class="i18n-en">Contact</span>
-          <span class="i18n-th">ติดต่อ</span>
-          <span>&rarr;</span>
-        </a>
       </div>
-
-      <!-- Research Metadata Badges -->
-      <div class="hero-tags i18n-en">
-        <span class="tag-label">Specializations:</span>
-        <span class="tag-badge">#PublicFinance</span>
-        <span class="tag-badge">#PolicyAnalysis</span>
-        <span class="tag-badge">#CausalEconometrics</span>
-        <span class="tag-badge">#AuditAndGovernance</span>
-        <span class="tag-badge">#PensionReform</span>
-        <span class="tag-badge">#AIInEconomics</span>
-      </div>
-      <div class="hero-tags i18n-th">
-        <span class="tag-label">สาขาความเชี่ยวชาญ:</span>
-        <span class="tag-badge">#การคลังสาธารณะ</span>
-        <span class="tag-badge">#การวิเคราะห์นโยบาย</span>
-        <span class="tag-badge">#เศรษฐมิติเชิงสาเหตุ</span>
-        <span class="tag-badge">#การตรวจสอบและธรรมาภิบาล</span>
-        <span class="tag-badge">#การปฏิรูประบบบำนาญ</span>
-        <span class="tag-badge">#AIเพื่องานเศรษฐศาสตร์</span>
-      </div>
-
     </div>
   </header>
 
   <!-- ========================================================================
        SECTION 2: ABOUT ME
        ======================================================================== -->
-  <section id="about" class="section">
+  <section id="about" class="section reveal-on-scroll">
     <div class="container">
       
       <div class="section-header">
@@ -280,7 +358,7 @@
   <!-- ========================================================================
        SECTION 3: RESEARCH INTERESTS (4 Cards)
        ======================================================================== -->
-  <section id="interests" class="section">
+  <section id="interests" class="section reveal-on-scroll">
     <div class="container">
       
       <div class="section-header">
@@ -301,7 +379,7 @@
       <div class="interests-grid">
         
         <!-- Card 1: Public Finance -->
-        <div class="interest-card">
+        <div class="interest-card reveal-delay-1">
           <div class="interest-top">
             <span class="interest-index">AREA // 01</span>
             <span class="interest-tag i18n-en">Fiscal Statecraft</span>
@@ -332,7 +410,7 @@
         </div>
 
         <!-- Card 2: Policy Analysis -->
-        <div class="interest-card">
+        <div class="interest-card reveal-delay-2">
           <div class="interest-top">
             <span class="interest-index">AREA // 02</span>
             <span class="interest-tag i18n-en">Mechanism Evaluation</span>
@@ -363,7 +441,7 @@
         </div>
 
         <!-- Card 3: Econometrics -->
-        <div class="interest-card">
+        <div class="interest-card reveal-delay-3">
           <div class="interest-top">
             <span class="interest-index">AREA // 03</span>
             <span class="interest-tag i18n-en">Causal Inference</span>
@@ -394,7 +472,7 @@
         </div>
 
         <!-- Card 4: AI for Economic Research -->
-        <div class="interest-card">
+        <div class="interest-card reveal-delay-4">
           <div class="interest-top">
             <span class="interest-index">AREA // 04</span>
             <span class="interest-tag i18n-en">Computational Tools</span>
@@ -432,7 +510,7 @@
   <!-- ========================================================================
        SECTION 4: FEATURED PROJECTS (2 Large In-Depth Essay Projects)
        ======================================================================== -->
-  <section id="projects" class="section">
+  <section id="projects" class="section reveal-on-scroll">
     <div class="container">
       
       <div class="section-header">
@@ -467,7 +545,7 @@
               <span class="meta-pill i18n-en">Theoretical Economics</span>
               <span class="meta-pill i18n-th">เศรษฐศาสตร์ทฤษฎี</span>
               <span class="meta-pill i18n-en">Bastiat / Hazlitt Framework</span>
-              <span class="meta-pill i18n-th">กรอบแนวคิด Bastiat & Hazlitt</span>
+              <span class="meta-pill i18n-th">กรอบแนวคิด Bastiat &amp; Hazlitt</span>
               <span class="meta-pill i18n-en">1,900+ Words</span>
               <span class="meta-pill i18n-th">วิเคราะห์เชิงลึก 1,900+ คำ</span>
             </div>
@@ -498,11 +576,11 @@
               <div class="theme-chips i18n-en">
                 <span class="theme-chip">The One Lesson Defined</span>
                 <span class="theme-chip">Bastiat’s Seen vs. Unseen</span>
-                <span class="theme-chip">Opportunity Cost & Scarcity</span>
+                <span class="theme-chip">Opportunity Cost &amp; Scarcity</span>
                 <span class="theme-chip">Broken Window Fallacy</span>
                 <span class="theme-chip">Deadweight Loss in Public Spending</span>
-                <span class="theme-chip">Price Controls & Artificial Shortages</span>
-                <span class="theme-chip">Labor Economics & Minimum Wages</span>
+                <span class="theme-chip">Price Controls &amp; Artificial Shortages</span>
+                <span class="theme-chip">Labor Economics &amp; Minimum Wages</span>
                 <span class="theme-chip">Modern Industrial Policy Relevance</span>
               </div>
               <div class="theme-chips i18n-th">
@@ -546,9 +624,9 @@
                     <li><a href="#hazlitt-sec3">3. The Seen vs. The Unseen Consequences</a></li>
                     <li><a href="#hazlitt-sec4">4. The Irreducible Reality of Opportunity Cost</a></li>
                     <li><a href="#hazlitt-sec5">5. The Broken Window Fallacy Deconstructed</a></li>
-                    <li><a href="#hazlitt-sec6">6. Public Spending & Fiscal Illusion</a></li>
-                    <li><a href="#hazlitt-sec7">7. Price Ceilings, Floors & Distortions</a></li>
-                    <li><a href="#hazlitt-sec8">8. Labor Markets & Employment Mandates</a></li>
+                    <li><a href="#hazlitt-sec6">6. Public Spending &amp; Fiscal Illusion</a></li>
+                    <li><a href="#hazlitt-sec7">7. Price Ceilings, Floors &amp; Distortions</a></li>
+                    <li><a href="#hazlitt-sec8">8. Labor Markets &amp; Employment Mandates</a></li>
                     <li><a href="#hazlitt-sec9">9. Policy Relevance in the 21st Century</a></li>
                     <li><a href="#hazlitt-sec10">10. Conclusion: Why Hazlitt Matters Today</a></li>
                   </ul>
@@ -604,7 +682,7 @@
                     Hazlitt exposes the fatal flaw in this logic by restoring the baker to the equation. Had the window not been broken, the baker would have possessed both an intact window <em>and</em> 250 dollars to purchase a tailored suit. Instead, after repairing the window, he possesses merely the window and no suit. The community has not gained an additional 250 dollars of wealth; it has suffered the physical annihilation of capital goods. What the crowd witnesses is the glazier receiving money (the seen); what the crowd forgets is the tailor who never received the baker’s order for a new suit (the unseen).
                   </p>
                   <div class="essay-callout">
-                    <div class="essay-callout-title">Macroeconomic Implication: War & Disaster Reconstruction</div>
+                    <div class="essay-callout-title">Macroeconomic Implication: War &amp; Disaster Reconstruction</div>
                     <p>
                       Hazlitt extends this parable directly to the catastrophic fallacy that war or natural disasters stimulate prosperity. Destruction of infrastructure does not generate authentic demand; it merely diverts scarce productive capacity toward replacement rather than advancement, impoverishing society in real capital terms.
                     </p>
@@ -744,13 +822,13 @@
 
               <!-- Essay References / Bibliography -->
               <div class="essay-references">
-                <h4 class="i18n-en">References & Academic Readings</h4>
+                <h4 class="i18n-en">References &amp; Academic Readings</h4>
                 <h4 class="i18n-th">เอกสารอ้างอิงและการอ่านเพิ่มเติม</h4>
                 <ol>
-                  <li>Hazlitt, H. (1946). <em>Economics in One Lesson</em>. New York: Harper & Brothers.</li>
+                  <li>Hazlitt, H. (1946). <em>Economics in One Lesson</em>. New York: Harper &amp; Brothers.</li>
                   <li>Bastiat, F. (1850). <em>Ce qu'on voit et ce qu'on ne voit pas</em> (That Which Is Seen and That Which Is Not Seen). Paris: Guillaumin.</li>
                   <li>Hayek, F. A. (1945). "The Use of Knowledge in Society." <em>American Economic Review</em>, 35(4), 519–530.</li>
-                  <li>Buchanan, J. M., & Tullock, G. (1962). <em>The Calculus of Consent: Logical Foundations of Constitutional Democracy</em>. Ann Arbor: University of Michigan Press.</li>
+                  <li>Buchanan, J. M., &amp; Tullock, G. (1962). <em>The Calculus of Consent: Logical Foundations of Constitutional Democracy</em>. Ann Arbor: University of Michigan Press.</li>
                   <li>Sowell, T. (2014). <em>Basic Economics: A Common Sense Guide to the Economy</em> (5th ed.). New York: Basic Books.</li>
                 </ol>
               </div>
@@ -779,7 +857,7 @@
           <div class="project-header-bar">
             <div class="project-type-chip">
               <span class="dot"></span>
-              <span class="i18n-en">ESSAY // 02 &bull; STRATEGIC MODELING & INSTITUTIONAL DESIGN</span>
+              <span class="i18n-en">ESSAY // 02 &bull; STRATEGIC MODELING &amp; INSTITUTIONAL DESIGN</span>
               <span class="i18n-th">บทความวิเคราะห์ // 02 &bull; การสร้างตัวแบบเชิงกลยุทธ์และการออกแบบสถาบัน</span>
             </div>
             <div class="project-meta-pills">
@@ -815,14 +893,14 @@
               <div class="themes-heading i18n-th">ประเด็นการวิเคราะห์หลัก:</div>
 
               <div class="theme-chips i18n-en">
-                <span class="theme-chip">Players, Strategies & Payoffs</span>
+                <span class="theme-chip">Players, Strategies &amp; Payoffs</span>
                 <span class="theme-chip">Nash Equilibrium Concept</span>
-                <span class="theme-chip">Prisoner's Dilemma & Public Goods</span>
-                <span class="theme-chip">Coordination & Schelling Points</span>
-                <span class="theme-chip">Credible Commitment & Subgame Perfection</span>
-                <span class="theme-chip">Repeated Games & Folk Theorem</span>
-                <span class="theme-chip">Asymmetric Information & Signaling</span>
-                <span class="theme-chip">Audit Games & Regulatory Enforcement</span>
+                <span class="theme-chip">Prisoner's Dilemma &amp; Public Goods</span>
+                <span class="theme-chip">Coordination &amp; Schelling Points</span>
+                <span class="theme-chip">Credible Commitment &amp; Subgame Perfection</span>
+                <span class="theme-chip">Repeated Games &amp; Folk Theorem</span>
+                <span class="theme-chip">Asymmetric Information &amp; Signaling</span>
+                <span class="theme-chip">Audit Games &amp; Regulatory Enforcement</span>
               </div>
               <div class="theme-chips i18n-th">
                 <span class="theme-chip">ผู้เล่น กลยุทธ์ และผลตอบแทน</span>
@@ -863,13 +941,13 @@
                     <li><a href="#gt-sec1">1. Strategy as Microeconomic Architecture</a></li>
                     <li><a href="#gt-sec2">2. Formal Foundations: Players, Strategies, Payoffs</a></li>
                     <li><a href="#gt-sec3">3. The Nash Equilibrium Solution Concept</a></li>
-                    <li><a href="#gt-sec4">4. The Prisoner’s Dilemma & Collective Failure</a></li>
-                    <li><a href="#gt-sec5">5. Coordination Games & Focal Points</a></li>
-                    <li><a href="#gt-sec6">6. Dynamic Games & Credible Commitment</a></li>
-                    <li><a href="#gt-sec7">7. Repeated Games & Folk Theorem</a></li>
-                    <li><a href="#gt-sec8">8. Asymmetric Information & Signaling</a></li>
-                    <li><a href="#gt-sec9">9. Public Policy & Mechanism Design</a></li>
-                    <li><a href="#gt-sec10">10. Strategic Auditing & Institutional Governance</a></li>
+                    <li><a href="#gt-sec4">4. The Prisoner’s Dilemma &amp; Collective Failure</a></li>
+                    <li><a href="#gt-sec5">5. Coordination Games &amp; Focal Points</a></li>
+                    <li><a href="#gt-sec6">6. Dynamic Games &amp; Credible Commitment</a></li>
+                    <li><a href="#gt-sec7">7. Repeated Games &amp; Folk Theorem</a></li>
+                    <li><a href="#gt-sec8">8. Asymmetric Information &amp; Signaling</a></li>
+                    <li><a href="#gt-sec9">9. Public Policy &amp; Mechanism Design</a></li>
+                    <li><a href="#gt-sec10">10. Strategic Auditing &amp; Institutional Governance</a></li>
                     <li><a href="#gt-sec11">11. Conclusion: The Economist's Toolkit</a></li>
                   </ul>
                 </div>
@@ -924,7 +1002,7 @@
                     Because Defection strictly dominates Cooperation for both agents, the unique Nash equilibrium is $(Defect, Defect)$, yielding severe prison sentences for both. Yet, the cooperative outcome $(Cooperate, Cooperate)$ would have yielded minimal sentences, creating a Pareto improvement.
                   </p>
                   <div class="essay-callout">
-                    <div class="essay-callout-title">Public Policy Application: Public Goods & The Tragedy of the Commons</div>
+                    <div class="essay-callout-title">Public Policy Application: Public Goods &amp; The Tragedy of the Commons</div>
                     <p>
                       The Prisoner's Dilemma is the mathematical archetype of public goods degradation, tax evasion, and global environmental pollution. In the absence of binding enforcement mechanisms or institutional architecture, each agent faces a private incentive to free-ride on the contributions of others, leading to the collective under-provision of clean air, municipal infrastructure, and fiscal compliance.
                     </p>
@@ -940,7 +1018,7 @@
                     In dynamic settings where actions occur sequentially, static Nash equilibrium proves insufficient because it permits non-credible threats. Reinhard Selten resolved this by refining the solution concept into <strong>Subgame Perfect Nash Equilibrium (SPNE)</strong>, solved via backward induction: an equilibrium strategy profile must constitute a Nash equilibrium in every isolated subgame of the extensive-form tree.
                   </p>
                   <p>
-                    This refinement unlocks the vital economic doctrine of <strong>credible commitment</strong>. In public finance, this is manifested in the <em>time-inconsistency problem</em> (Kydland & Prescott, 1977). A government announces at $t_0$ that it will maintain zero inflation or refrain from bailing out imprudent financial institutions. However, once private agents lock in contracts at $t_1$, the policymaker at $t_2$ faces a strong ex-post incentive to renege. Unless the state binds its own hands through independent institutions, its threats and promises lack credibility, leading to elevated risk premiums and moral hazard.
+                    This refinement unlocks the vital economic doctrine of <strong>credible commitment</strong>. In public finance, this is manifested in the <em>time-inconsistency problem</em> (Kydland &amp; Prescott, 1977). A government announces at $t_0$ that it will maintain zero inflation or refrain from bailing out imprudent financial institutions. However, once private agents lock in contracts at $t_1$, the policymaker at $t_2$ faces a strong ex-post incentive to renege. Unless the state binds its own hands through independent institutions, its threats and promises lack credibility, leading to elevated risk premiums and moral hazard.
                   </p>
 
                   <h3 id="gt-sec7">7. The Shadow of the Future: Repeated Games and the Folk Theorem</h3>
@@ -1052,7 +1130,7 @@
                     ในสถานการณ์ที่การตัดสินใจเกิดขึ้นตามลำดับเวลา ดุลยภาพแนชแบบสถิตอาจยอมรับคำขู่ที่ไม่น่าเชื่อถือ Reinhard Selten จึงพัฒนาแนวคิด <strong>Subgame Perfect Nash Equilibrium (SPNE)</strong> โดยใช้การอุปนัยย้อนกลับ (Backward Induction) เพื่อตรวจสอบว่าคำขู่หรือคำสัญญานั้นน่าเชื่อถือเมื่อถึงเวลาต้องกระทำจริงหรือไม่
                   </p>
                   <p>
-                    ในทางเศรษฐศาสตร์การคลัง นี่คือปัญหา <em>ความไม่สอดคล้องทางเวลา (Time-Inconsistency Problem)</em> (Kydland & Prescott, 1977) เช่น รัฐบาลประกาศว่าจะรักษาอัตราเงินเฟ้อเป็นศูนย์หรือไม่เข้าไปอุ้มสถาบันการเงินที่ล้มเหลว แต่เมื่อเอกชนทำสัญญาไปแล้ว รัฐบาลกลับมีแรงจูงใจที่จะผิดคำสัญญาในภายหลัง หากรัฐไม่ผูกมัดตนเองผ่านสถาบันอิสระ (เช่น ธนาคารกลางที่เป็นอิสระ หรือกฎวินัยการเงินการคลังที่เคร่งครัด) คำสัญญาของรัฐจะขาดความน่าเชื่อถือ ส่งผลให้เกิดภัยทางศีลธรรม (Moral Hazard)
+                    ในทางเศรษฐศาสตร์การคลัง นี่คือปัญหา <em>ความไม่สอดคล้องทางเวลา (Time-Inconsistency Problem)</em> (Kydland &amp; Prescott, 1977) เช่น รัฐบาลประกาศว่าจะรักษาอัตราเงินเฟ้อเป็นศูนย์หรือไม่เข้าไปอุ้มสถาบันการเงินที่ล้มเหลว แต่เมื่อเอกชนทำสัญญาไปแล้ว รัฐบาลกลับมีแรงจูงใจที่จะผิดคำสัญญาในภายหลัง หากรัฐไม่ผูกมัดตนเองผ่านสถาบันอิสระ (เช่น ธนาคารกลางที่เป็นอิสระ หรือกฎวินัยการเงินการคลังที่เคร่งครัด) คำสัญญาของรัฐจะขาดความน่าเชื่อถือ ส่งผลให้เกิดภัยทางศีลธรรม (Moral Hazard)
                   </p>
 
                   <h3 id="gt-th-sec7">7. เงาแห่งอนาคต: เกมเล่นซ้ำและทฤษฎีบทพื้นบ้าน (Folk Theorem)</h3>
@@ -1084,15 +1162,15 @@
 
               <!-- Essay References / Bibliography -->
               <div class="essay-references">
-                <h4 class="i18n-en">References & Academic Readings</h4>
+                <h4 class="i18n-en">References &amp; Academic Readings</h4>
                 <h4 class="i18n-th">เอกสารอ้างอิงและการอ่านเพิ่มเติม</h4>
                 <ol>
                   <li>Nash, J. (1950). "Equilibrium Points in n-Person Games." <em>Proceedings of the National Academy of Sciences</em>, 36(1), 48–49.</li>
-                  <li>Von Neumann, J., & Morgenstern, O. (1944). <em>Theory of Games and Economic Behavior</em>. Princeton University Press.</li>
+                  <li>Von Neumann, J., &amp; Morgenstern, O. (1944). <em>Theory of Games and Economic Behavior</em>. Princeton University Press.</li>
                   <li>Schelling, T. C. (1960). <em>The Strategy of Conflict</em>. Harvard University Press.</li>
                   <li>Selten, R. (1965). "Spieltheoretische Behandlung eines Oligopolmodells mit Nachfrageträgheit." <em>Zeitschrift für die gesamte Staatswissenschaft</em>, 121(2), 301–324.</li>
-                  <li>Kydland, F. E., & Prescott, E. C. (1977). "Rules Rather than Discretion: The Inconsistency of Optimal Plans." <em>Journal of Political Economy</em>, 85(3), 473–492.</li>
-                  <li>Fudenberg, D., & Tirole, J. (1991). <em>Game Theory</em>. MIT Press.</li>
+                  <li>Kydland, F. E., &amp; Prescott, E. C. (1977). "Rules Rather than Discretion: The Inconsistency of Optimal Plans." <em>Journal of Political Economy</em>, 85(3), 473–492.</li>
+                  <li>Fudenberg, D., &amp; Tirole, J. (1991). <em>Game Theory</em>. MIT Press.</li>
                   <li>Roth, A. E. (2002). "The Economist as Engineer: Game Theory, Experimentation, and Computation as Tools for Design Economics." <em>Econometrica</em>, 70(4), 1341–1378.</li>
                 </ol>
               </div>
@@ -1119,17 +1197,17 @@
   </section>
 
   <!-- ========================================================================
-       SECTION 5: CONTACT
+       SECTION 5: CONTACT (Enhanced Academic Panel Layout)
        ======================================================================== -->
-  <section id="contact" class="section">
+  <section id="contact" class="section reveal-on-scroll">
     <div class="container">
       
       <div class="section-header">
-        <div class="section-label i18n-en">04 // Inquiries & Dialogue</div>
+        <div class="section-label i18n-en">04 // Inquiries &amp; Dialogue</div>
         <div class="section-label i18n-th">04 // ติดต่อและสนทนาทางวิชาการ</div>
 
-        <h2 class="section-title i18n-en">Contact</h2>
-        <h2 class="section-title i18n-th">ช่องทางการติดต่อ</h2>
+        <h2 class="section-title i18n-en">Contact &amp; Academic Channels</h2>
+        <h2 class="section-title i18n-th">ช่องทางการติดต่อและวิชาการ</h2>
 
         <p class="section-subtitle i18n-en">
           Open for academic collaboration, public finance research discussions, audit consultations, and econometric inquiries.
@@ -1143,7 +1221,7 @@
         
         <!-- Left: Direct Communication Channels -->
         <div class="contact-card-main">
-          <div class="contact-lead i18n-en">Direct Academic & Professional Channels</div>
+          <div class="contact-lead i18n-en">Direct Academic &amp; Professional Channels</div>
           <div class="contact-lead i18n-th">ช่องทางการติดต่อทางวิชาการและวิชาชีพโดยตรง</div>
 
           <p class="i18n-en">
@@ -1193,7 +1271,7 @@
 
         </div>
 
-        <!-- Right: Collaboration Scope -->
+        <!-- Right: Collaboration Scope & Profile Links -->
         <aside class="contact-meta-sidebar">
           
           <div class="meta-info-card">
@@ -1205,10 +1283,13 @@
             <p class="i18n-th">
               ยินดีร่วมงานวิจัยเชิงประจักษ์ด้านการคลังสาธารณะ การวิเคราะห์ข้อมูลระบบบำเหน็จบำนาญข้าราชการ และการประเมินผลโครงการด้วยเศรษฐมิติจุลภาค
             </p>
+            <a href="https://github.com/K-Sera-8" target="_blank" rel="noopener noreferrer" class="github-profile-link">
+              <span>&#128187; GitHub Profile: @K-Sera-8 &rarr;</span>
+            </a>
           </div>
 
           <div class="meta-info-card">
-            <h4 class="i18n-en">Institutional Audit & Policy</h4>
+            <h4 class="i18n-en">Institutional Audit &amp; Policy</h4>
             <h4 class="i18n-th">การตรวจสอบเชิงสถาบันและนโยบาย</h4>
             <p class="i18n-en">
               Consulting on public sector internal control frameworks, regulatory compliance mechanisms, and quantitative fiscal monitoring tools.
