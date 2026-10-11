@@ -52,6 +52,67 @@
   --transition-slow: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
 
+/* ==========================================================================
+   INTERNATIONALIZATION (i18n) RULES
+   ========================================================================== */
+body.lang-en .i18n-th {
+  display: none !important;
+}
+
+body.lang-th .i18n-en {
+  display: none !important;
+}
+
+body.lang-th {
+  font-family: 'JetBrains Mono', 'Noto Sans Thai', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body.lang-th .essay-body {
+  line-height: 1.95;
+  letter-spacing: 0.01em;
+}
+
+/* Language Toggle Button */
+.lang-switch-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-medium);
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition-fast);
+  user-select: none;
+}
+
+.lang-switch-btn:hover {
+  border-color: var(--accent-cyan);
+  box-shadow: 0 0 12px var(--accent-cyan-dim);
+  color: var(--text-highlight);
+}
+
+.lang-switch-btn .lang-opt {
+  color: var(--text-muted);
+  transition: var(--transition-fast);
+}
+
+.lang-switch-btn .lang-opt.active {
+  color: var(--accent-cyan);
+  font-weight: 700;
+  text-shadow: 0 0 8px var(--accent-cyan-dim);
+}
+
+.lang-switch-btn .lang-divider {
+  color: var(--border-medium);
+  font-size: 0.75rem;
+}
+
+
 /* Base & Reset */
 *, *::before, *::after {
   box-sizing: border-box;

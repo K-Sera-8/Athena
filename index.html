@@ -8,42 +8,78 @@
   <meta name="author" content="Phatthanan Siangpro">
   <meta name="keywords" content="Economics, Public Finance, Econometrics, Policy Analysis, Game Theory, Audit, Pension Reform, AI for Economic Research">
 
-  <!-- Google Fonts: JetBrains Mono -->
+  <!-- Google Fonts: JetBrains Mono & Noto Sans Thai -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,600&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Main Stylesheet -->
   <link rel="stylesheet" href="styles.css">
   <link rel="icon" type="image/png" href="assets/black.png">
 </head>
-<body>
+<body class="lang-en">
 
-  <!-- Top Sticky Navigation -->
+  <!-- ========================================================================
+       TOP STICKY NAVIGATION
+       ======================================================================== -->
   <nav class="site-nav" aria-label="Main Navigation">
     <div class="container nav-container">
       <a href="#hero" class="brand-link" aria-label="Phatthanan Siangpro Home">
         <img src="assets/black.png" alt="Phatthanan Siangpro Logo" class="brand-avatar">
         <div class="brand-text">
           <span class="brand-name">Phatthanan Siangpro</span>
-          <span class="brand-tag">// Research & Policy</span>
+          <span class="brand-tag i18n-en">// Research & Policy</span>
+          <span class="brand-tag i18n-th">// งานวิจัยและนโยบายสาธารณะ</span>
         </div>
       </a>
 
       <!-- Desktop Navigation Links -->
       <ul class="nav-links">
-        <li><a href="#about" class="nav-link">01. About</a></li>
-        <li><a href="#interests" class="nav-link">02. Interests</a></li>
-        <li><a href="#projects" class="nav-link">03. Projects</a></li>
-        <li><a href="#contact" class="nav-link">04. Contact</a></li>
+        <li>
+          <a href="#about" class="nav-link">
+            <span class="i18n-en">01. About</span>
+            <span class="i18n-th">01. เกี่ยวกับฉัน</span>
+          </a>
+        </li>
+        <li>
+          <a href="#interests" class="nav-link">
+            <span class="i18n-en">02. Interests</span>
+            <span class="i18n-th">02. ความสนใจวิจัย</span>
+          </a>
+        </li>
+        <li>
+          <a href="#projects" class="nav-link">
+            <span class="i18n-en">03. Projects</span>
+            <span class="i18n-th">03. ผลงานวิเคราะห์</span>
+          </a>
+        </li>
+        <li>
+          <a href="#contact" class="nav-link">
+            <span class="i18n-en">04. Contact</span>
+            <span class="i18n-th">04. ติดต่อ</span>
+          </a>
+        </li>
       </ul>
 
-      <a href="#contact" class="nav-cta">Connect &rarr;</a>
+      <!-- Nav Actions: Language Switcher & Connect CTA -->
+      <div style="display: flex; align-items: center; gap: 12px;">
+        <button class="lang-switch-btn" aria-label="Switch Language / สลับภาษา (EN/TH)" title="Switch Language / สลับภาษา">
+          <span class="lang-opt lang-opt-en active">EN</span>
+          <span class="lang-divider">/</span>
+          <span class="lang-opt lang-opt-th">TH</span>
+        </button>
 
-      <!-- Mobile Menu Toggle -->
-      <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-        [ &#9776; ]
-      </button>
+        <a href="#contact" class="nav-cta">
+          <span class="i18n-en">Connect &rarr;</span>
+          <span class="i18n-th">ติดต่อ &rarr;</span>
+        </a>
+
+        <!-- Mobile Menu Toggle -->
+        <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          [ &#9776; ]
+        </button>
+      </div>
+
     </div>
   </nav>
 
@@ -56,7 +92,8 @@
       
       <!-- Quote Badge -->
       <div class="hero-quote-badge">
-        <span class="hero-quote-text">“Master Economics, the Simple Way.”</span>
+        <span class="hero-quote-text i18n-en">“Master Economics, the Simple Way.”</span>
+        <span class="hero-quote-text i18n-th">“เข้าใจเศรษฐศาสตร์อย่างถ่องแท้ ในวิธีที่เรียบง่าย”</span>
       </div>
 
       <!-- Hero Profile Row -->
@@ -65,33 +102,44 @@
           <img src="assets/black.png" alt="Phatthanan Siangpro Emblem" class="hero-logo-img">
         </div>
         <div class="hero-header-text">
-          <div class="hero-greeting">// Researcher & Auditor Portfolio</div>
+          <div class="hero-greeting i18n-en">// Researcher & Auditor Portfolio</div>
+          <div class="hero-greeting i18n-th">// แฟ้มผลงานวิจัยและการตรวจสอบภาครัฐ</div>
+          
           <h1 class="hero-name">Phatthanan Siangpro</h1>
-          <div class="hero-identity">
+          
+          <div class="hero-identity i18n-en">
             Economics Graduate Student | Public Finance | Policy Analysis | Econometrics
+          </div>
+          <div class="hero-identity i18n-th">
+            นักศึกษาปริญญาโทเศรษฐศาสตร์ | การคลังสาธารณะ | การวิเคราะห์นโยบาย | เศรษฐมิติ
           </div>
         </div>
       </div>
 
       <!-- Description -->
-      <p class="hero-description">
+      <p class="hero-description i18n-en">
         I study how economic ideas, public institutions, and data can explain real-world decisions.
+      </p>
+      <p class="hero-description i18n-th">
+        ฉันศึกษาว่าแนวคิดทางเศรษฐศาสตร์ สถาบันภาครัฐ และข้อมูลเชิงประจักษ์ สามารถอธิบายและชี้นำการตัดสินใจในโลกแห่งความเป็นจริงได้อย่างไร
       </p>
 
       <!-- Action Buttons -->
       <div class="hero-actions">
         <a href="#projects" class="btn btn-primary">
-          <span>View Projects</span>
+          <span class="i18n-en">View Projects</span>
+          <span class="i18n-th">ดูผลงานวิจัย</span>
           <span>&darr;</span>
         </a>
         <a href="#contact" class="btn btn-outline">
-          <span>Contact</span>
+          <span class="i18n-en">Contact</span>
+          <span class="i18n-th">ติดต่อ</span>
           <span>&rarr;</span>
         </a>
       </div>
 
       <!-- Research Metadata Badges -->
-      <div class="hero-tags">
+      <div class="hero-tags i18n-en">
         <span class="tag-label">Specializations:</span>
         <span class="tag-badge">#PublicFinance</span>
         <span class="tag-badge">#PolicyAnalysis</span>
@@ -99,6 +147,15 @@
         <span class="tag-badge">#AuditAndGovernance</span>
         <span class="tag-badge">#PensionReform</span>
         <span class="tag-badge">#AIInEconomics</span>
+      </div>
+      <div class="hero-tags i18n-th">
+        <span class="tag-label">สาขาความเชี่ยวชาญ:</span>
+        <span class="tag-badge">#การคลังสาธารณะ</span>
+        <span class="tag-badge">#การวิเคราะห์นโยบาย</span>
+        <span class="tag-badge">#เศรษฐมิติเชิงสาเหตุ</span>
+        <span class="tag-badge">#การตรวจสอบและธรรมาภิบาล</span>
+        <span class="tag-badge">#การปฏิรูประบบบำนาญ</span>
+        <span class="tag-badge">#AIเพื่องานเศรษฐศาสตร์</span>
       </div>
 
     </div>
@@ -111,52 +168,106 @@
     <div class="container">
       
       <div class="section-header">
-        <div class="section-label">01 // Profile & Background</div>
-        <h2 class="section-title">About Me</h2>
-        <p class="section-subtitle">
+        <div class="section-label i18n-en">01 // Profile & Background</div>
+        <div class="section-label i18n-th">01 // ประวัติและภูมิหลังทางวิชาการ</div>
+        
+        <h2 class="section-title i18n-en">About Me</h2>
+        <h2 class="section-title i18n-th">เกี่ยวกับฉัน</h2>
+
+        <p class="section-subtitle i18n-en">
           Bridging the gap between economic theory, rigorous empirical auditing, and public institutional reform.
+        </p>
+        <p class="section-subtitle i18n-th">
+          เชื่อมโยงช่องว่างระหว่างทฤษฎีเศรษฐศาสตร์ การตรวจสอบเชิงประจักษ์อย่างเข้มงวด และการปฏิรูปสถาบันภาครัฐ
         </p>
       </div>
 
       <div class="about-grid">
         
-        <!-- Left: Polished First-Person Narrative -->
+        <!-- Left: Polished Narrative -->
         <article class="about-narrative">
-          <p class="narrative-lead">
-            I am an economics graduate student and government auditor working at the intersection of public finance, empirical policy evaluation, and institutional governance.
-          </p>
-          <p>
-            My intellectual foundation is anchored in public economics and the mechanics of state fiscal capacity. Having examined the execution of public budgets from inside oversight institutions, I have observed firsthand how statutory intentions diverge from operational outcomes. This field experience has shaped my conviction that policy analysis cannot remain purely theoretical; it must account for institutional incentives, behavioral frictions, and the unexamined secondary effects of fiscal decrees.
-          </p>
-          <p>
-            My research agenda concentrates heavily on public sector compensation structures and pension reform. In an era marked by demographic transitions and mounting unfunded sovereign obligations, evaluating the actuarial sustainability and allocative fairness of civil service retirement schemes has become an urgent fiscal challenge. I deploy econometrics and causal inference methodologies to analyze structural incentives, wage compression, and long-term liability management in public institutions.
-          </p>
-          <p>
-            Beyond orthodox public finance, I maintain a strong active interest in investment analysis, capital budgeting, and the integration of artificial intelligence and computational tools into empirical research. From utilizing natural language processing to audit regulatory disclosures to constructing predictive econometric specifications for revenue forecasting, I leverage modern data tools to make economic inquiry sharper, more reproducible, and actionable for public decision-makers.
-          </p>
+          
+          <!-- English Narrative -->
+          <div class="i18n-en">
+            <p class="narrative-lead">
+              I am an economics graduate student and government auditor working at the intersection of public finance, empirical policy evaluation, and institutional governance.
+            </p>
+            <p>
+              My intellectual foundation is anchored in public economics and the mechanics of state fiscal capacity. Having examined the execution of public budgets from inside oversight institutions, I have observed firsthand how statutory intentions diverge from operational outcomes. This field experience has shaped my conviction that policy analysis cannot remain purely theoretical; it must account for institutional incentives, behavioral frictions, and the unexamined secondary effects of fiscal decrees.
+            </p>
+            <p>
+              My research agenda concentrates heavily on public sector compensation structures and pension reform. In an era marked by demographic transitions and mounting unfunded sovereign obligations, evaluating the actuarial sustainability and allocative fairness of civil service retirement schemes has become an urgent fiscal challenge. I deploy econometrics and causal inference methodologies to analyze structural incentives, wage compression, and long-term liability management in public institutions.
+            </p>
+            <p>
+              Beyond orthodox public finance, I maintain a strong active interest in investment analysis, capital budgeting, and the integration of artificial intelligence and computational tools into empirical research. From utilizing natural language processing to audit regulatory disclosures to constructing predictive econometric specifications for revenue forecasting, I leverage modern data tools to make economic inquiry sharper, more reproducible, and actionable for public decision-makers.
+            </p>
+          </div>
+
+          <!-- Thai Narrative -->
+          <div class="i18n-th">
+            <p class="narrative-lead">
+              ฉันเป็นนักศึกษาปริญญาโทด้านเศรษฐศาสตร์และผู้ตรวจสอบภาครัฐ ที่มุ่งเน้นการศึกษาวิจัย ณ จุดตัดระหว่างเศรษฐศาสตร์การคลังสาธารณะ การประเมินนโยบายเชิงประจักษ์ และธรรมาภิบาลของสถาบันรัฐ
+            </p>
+            <p>
+              รากฐานทางวิชาการของฉันตั้งอยู่บนเศรษฐศาสตร์สาธารณะ (Public Economics) และขีดความสามารถทางการคลังของรัฐ (Fiscal Statecraft) จากประสบการณ์การตรวจสอบการจัดสรรและเบิกจ่ายงบประมาณแผ่นดินจากมุมมองขององค์กรกำกับดูแล ทำให้ฉันตระหนักโดยตรงว่าเจตนารมณ์ตามตัวบทกฎหมายมักเบี่ยงเบนไปจากผลลัพธ์ในการปฏิบัติจริง การวิเคราะห์นโยบายจึงไม่อาจหยุดอยู่เพียงตัวแบบทางทฤษฎี แต่ต้องคำนึงถึงแรงจูงใจเชิงสถาบัน แรงเสียดทานทางพฤติกรรม และผลกระทบขั้นทุติยภูมิที่มักถูกละเลย
+            </p>
+            <p>
+              วาระการวิจัยหลักของฉันให้ความสำคัญเป็นพิเศษกับโครงสร้างค่าตอบแทนในภาคสาธารณะและการปฏิรูประบบบำนาญ ท่ามกลางการเปลี่ยนผ่านสู่สังคมสูงวัยและภาระผูกพันทางการคลังที่ยังไม่มีกองทุนรองรับ (Unfunded Liabilities) การประเมินความยั่งยืนทางคณิตศาสตร์ประกันภัยและความเป็นธรรมในการจัดสรรงบประมาณจึงเป็นโจทย์ท้าทายเร่งด่วน โดยฉันนำระเบียบวิธีเศรษฐมิติและการอนุมานเชิงสาเหตุ (Causal Inference) มาใช้ประเมินแรงจูงใจเชิงโครงสร้างและการบริหารหนี้สินระยะยาวของรัฐ
+            </p>
+            <p>
+              นอกเหนือจากเศรษฐศาสตร์การคลัง ฉันยังให้ความสนใจอย่างลึกซึ้งในการวิเคราะห์การลงทุน (Investment Analysis) การจัดทำงบประมาณลงทุน และการประยุกต์ใช้ปัญญาประดิษฐ์และเครื่องมือเชิงคำนวณในงานวิจัย ตั้งแต่การประมวลผลภาษาธรรมชาติ (NLP) ในการตรวจสอบรายงานการเงินภาครัฐ ไปจนถึงแบบจำลองการพยากรณ์รายได้ เพื่อให้การวิเคราะห์ทางเศรษฐศาสตร์มีความเฉียบคม โปร่งใส และนำไปสู่การตัดสินใจเชิงนโยบายได้จริง
+            </p>
+          </div>
+
         </article>
 
         <!-- Right: Academic & Professional Highlights -->
         <aside class="about-sidebar">
           
-          <div class="sidebar-card">
-            <h3 class="sidebar-card-title">Core Research Focus</h3>
-            <ul class="sidebar-list">
-              <li><strong>Public Economics:</strong> Fiscal sustainability, optimal taxation, and expenditure quality</li>
-              <li><strong>Policy Analysis:</strong> Counterfactual evaluation and regulatory impact assessments</li>
-              <li><strong>Pension Reform:</strong> Public sector compensation, retirement liabilities, and fiscal risks</li>
-              <li><strong>Investment Analysis:</strong> Capital budgeting, infrastructure valuation, and asset allocation</li>
-            </ul>
+          <!-- English Sidebar -->
+          <div class="i18n-en">
+            <div class="sidebar-card">
+              <h3 class="sidebar-card-title">Core Research Focus</h3>
+              <ul class="sidebar-list">
+                <li><strong>Public Economics:</strong> Fiscal sustainability, optimal taxation, and expenditure quality</li>
+                <li><strong>Policy Analysis:</strong> Counterfactual evaluation and regulatory impact assessments</li>
+                <li><strong>Pension Reform:</strong> Public sector compensation, retirement liabilities, and fiscal risks</li>
+                <li><strong>Investment Analysis:</strong> Capital budgeting, infrastructure valuation, and asset allocation</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card" style="margin-top: 20px;">
+              <h3 class="sidebar-card-title">Methodological Arsenal</h3>
+              <ul class="sidebar-list">
+                <li><strong>Econometrics:</strong> Panel data, DiD, regression discontinuity, and causal inference</li>
+                <li><strong>Strategic Modeling:</strong> Game-theoretic mechanism design and audit games</li>
+                <li><strong>AI & Data Tools:</strong> Machine learning in fiscal forecasting and NLP for policy audits</li>
+                <li><strong>Institutional Auditing:</strong> Public expenditure compliance and internal control forensics</li>
+              </ul>
+            </div>
           </div>
 
-          <div class="sidebar-card">
-            <h3 class="sidebar-card-title">Methodological Arsenal</h3>
-            <ul class="sidebar-list">
-              <li><strong>Econometrics:</strong> Panel data, DiD, regression discontinuity, and causal inference</li>
-              <li><strong>Strategic Modeling:</strong> Game-theoretic mechanism design and audit games</li>
-              <li><strong>AI & Data Tools:</strong> Machine learning in fiscal forecasting and NLP for policy audits</li>
-              <li><strong>Institutional Auditing:</strong> Public expenditure compliance and internal control forensics</li>
-            </ul>
+          <!-- Thai Sidebar -->
+          <div class="i18n-th">
+            <div class="sidebar-card">
+              <h3 class="sidebar-card-title">ขอบเขตงานวิจัยหลัก</h3>
+              <ul class="sidebar-list">
+                <li><strong>เศรษฐศาสตร์สาธารณะ:</strong> ความยั่งยืนทางการคลัง ภาษีอากรที่เหมาะสม และประสิทธิภาพการใช้จ่ายภาครัฐ</li>
+                <li><strong>การวิเคราะห์นโยบาย:</strong> การประเมินผลเชิงเปรียบเทียบและการประเมินผลกระทบทางกฎระเบียบ</li>
+                <li><strong>การปฏิรูประบบบำนาญ:</strong> โครงสร้างค่าตอบแทนข้าราชการ หนี้สินบำนาญ และความเสี่ยงทางการคลัง</li>
+                <li><strong>การวิเคราะห์การลงทุน:</strong> การจัดทำงบลงทุน การประเมินมูลค่าโครงสร้างพื้นฐาน และการจัดสรรสินทรัพย์</li>
+              </ul>
+            </div>
+
+            <div class="sidebar-card" style="margin-top: 20px;">
+              <h3 class="sidebar-card-title">คลังเครื่องมือและระเบียบวิธีวิจัย</h3>
+              <ul class="sidebar-list">
+                <li><strong>เศรษฐมิติ:</strong> ข้อมูลพาเนล (Panel Data), DiD, Regression Discontinuity และการอนุมานเชิงสาเหตุ</li>
+                <li><strong>การสร้างตัวแบบเชิงกลยุทธ์:</strong> การออกแบบกลไกด้วยทฤษฎีเกมและเกมการตรวจสอบ (Audit Games)</li>
+                <li><strong>AI และเครื่องมือข้อมูล:</strong> แมชชีนเลิร์นนิงพยากรณ์งบประมาณ และ NLP ตรวจสอบเอกสารนโยบาย</li>
+                <li><strong>การตรวจสอบสถาบัน:</strong> การตรวจสอบความถูกต้องของการใช้จ่ายภาครัฐและการควบคุมภายใน</li>
+              </ul>
+            </div>
           </div>
 
         </aside>
@@ -173,10 +284,17 @@
     <div class="container">
       
       <div class="section-header">
-        <div class="section-label">02 // Intellectual Architecture</div>
-        <h2 class="section-title">Research Interests</h2>
-        <p class="section-subtitle">
+        <div class="section-label i18n-en">02 // Intellectual Architecture</div>
+        <div class="section-label i18n-th">02 // กรอบแนวคิดและงานวิจัย</div>
+        
+        <h2 class="section-title i18n-en">Research Interests</h2>
+        <h2 class="section-title i18n-th">ความสนใจทางวิชาการ</h2>
+
+        <p class="section-subtitle i18n-en">
           Four foundational pillars guiding my current empirical inquiries and graduate-level scholarship.
+        </p>
+        <p class="section-subtitle i18n-th">
+          สี่เสาหลักทางวิชาการที่เป็นแนวทางขับเคลื่อนงานวิจัยเชิงประจักษ์และการศึกษาในระดับบัณฑิตศึกษา
         </p>
       </div>
 
@@ -186,17 +304,30 @@
         <div class="interest-card">
           <div class="interest-top">
             <span class="interest-index">AREA // 01</span>
-            <span class="interest-tag">Fiscal Statecraft</span>
+            <span class="interest-tag i18n-en">Fiscal Statecraft</span>
+            <span class="interest-tag i18n-th">นโยบายการคลัง</span>
           </div>
-          <h3 class="interest-title">Public Finance</h3>
-          <p class="interest-desc">
+          <h3 class="interest-title i18n-en">Public Finance</h3>
+          <h3 class="interest-title i18n-th">การคลังสาธารณะ</h3>
+
+          <p class="interest-desc i18n-en">
             Investigating state revenue systems, sovereign debt dynamics, and optimal public expenditure allocations. A central focus is public sector compensation design, pension sustainability, and the management of long-term contingent fiscal liabilities that jeopardize budgetary solvency across generational horizons.
           </p>
-          <ul class="interest-topics">
+          <p class="interest-desc i18n-th">
+            ศึกษาโครงสร้างรายได้ของรัฐ พลวัตหนี้สาธารณะ และการจัดสรรงบประมาณรายจ่ายที่เหมาะสมที่สุด โดยมุ่งเน้นเป็นพิเศษในเรื่องโครงสร้างค่าตอบแทนภาครัฐ ความยั่งยืนของกองทุนบำเหน็จบำนาญข้าราชการ และการบริหารภาระผูกพันทางการคลังระยะยาวที่อาจส่งผลกระทบต่อเสถียรภาพงบประมาณข้ามรุ่น
+          </p>
+
+          <ul class="interest-topics i18n-en">
             <li>Civil service pension reform and actuarial sustainability</li>
             <li>Public wage bill dynamics and labor supply elasticities</li>
             <li>Intergovernmental fiscal transfers and fiscal federalism</li>
             <li>Tax incidence, deadweight loss, and revenue elasticity</li>
+          </ul>
+          <ul class="interest-topics i18n-th">
+            <li>การปฏิรูประบบบำนาญข้าราชการและความยั่งยืนทางคณิตศาสตร์ประกันภัย</li>
+            <li>พลวัตภาระงบประมาณค่าจ้างภาครัฐและความยืดหยุ่นของอุปทานแรงงาน</li>
+            <li>เงินอุดหนุนระหว่างระดับรัฐบาลและการคลังท้องถิ่น (Fiscal Federalism)</li>
+            <li>ภาระภาษี การสูญเสียส่วนเกินทางเศรษฐกิจ (Deadweight Loss) และความยืดหยุ่นของรายได้ภาษี</li>
           </ul>
         </div>
 
@@ -204,17 +335,30 @@
         <div class="interest-card">
           <div class="interest-top">
             <span class="interest-index">AREA // 02</span>
-            <span class="interest-tag">Mechanism Evaluation</span>
+            <span class="interest-tag i18n-en">Mechanism Evaluation</span>
+            <span class="interest-tag i18n-th">การประเมินกลไก</span>
           </div>
-          <h3 class="interest-title">Policy Analysis</h3>
-          <p class="interest-desc">
+          <h3 class="interest-title i18n-en">Policy Analysis</h3>
+          <h3 class="interest-title i18n-th">การวิเคราะห์นโยบาย</h3>
+
+          <p class="interest-desc i18n-en">
             Evaluating regulatory frameworks, statutory mandates, and government intervention through an institutional and microeconomic lens. Exploring how informational asymmetries and political economy incentives create unintended distortions across targeted markets and bureaucratic delivery systems.
           </p>
-          <ul class="interest-topics">
+          <p class="interest-desc i18n-th">
+            ประเมินกรอบกฎระเบียบ ข้อบังคับทางกฎหมาย และการแทรกแซงของรัฐผ่านมุมมองเชิงสถาบันและเศรษฐศาสตร์จุลภาค สำรวจว่าความไม่สมมาตรของข้อมูลและแรงจูงใจทางการเมืองก่อให้เกิดความบิดเบือนที่ไม่ได้ตั้งใจในตลาดและระบบการบริหารราชการแผ่นดินอย่างไร
+          </p>
+
+          <ul class="interest-topics i18n-en">
             <li>Ex-ante and ex-post regulatory impact assessments</li>
             <li>Public audit frameworks and administrative deterrence</li>
             <li>Cost-benefit analysis with social discount rate modeling</li>
             <li>Institutional design to combat moral hazard and capture</li>
+          </ul>
+          <ul class="interest-topics i18n-th">
+            <li>การประเมินผลกระทบทางกฎระเบียบทั้งก่อนและหลังการบังคับใช้ (RIA)</li>
+            <li>กรอบการตรวจสอบภาครัฐและการป้องปรามเชิงบริหาร (Administrative Deterrence)</li>
+            <li>การวิเคราะห์ต้นทุน-ผลประโยชน์ (CBA) พร้อมการจำลองอัตราคิดลดทางสังคม</li>
+            <li>การออกแบบเชิงสถาบันเพื่อป้องกันภัยทางศีลธรรม (Moral Hazard) และการครอบงำโดยกลุ่มผลประโยชน์</li>
           </ul>
         </div>
 
@@ -222,17 +366,30 @@
         <div class="interest-card">
           <div class="interest-top">
             <span class="interest-index">AREA // 03</span>
-            <span class="interest-tag">Causal Inference</span>
+            <span class="interest-tag i18n-en">Causal Inference</span>
+            <span class="interest-tag i18n-th">การอนุมานเชิงสาเหตุ</span>
           </div>
-          <h3 class="interest-title">Econometrics</h3>
-          <p class="interest-desc">
+          <h3 class="interest-title i18n-en">Econometrics</h3>
+          <h3 class="interest-title i18n-th">เศรษฐมิติ</h3>
+
+          <p class="interest-desc i18n-en">
             Applying rigorous quantitative methods to isolate causal parameters from observational administrative data. Specializing in microeconometric identification strategies to evaluate policy shocks, fiscal multipliers, and labor market responses to legislative interventions.
           </p>
-          <ul class="interest-topics">
+          <p class="interest-desc i18n-th">
+            ประยุกต์ใช้วิธีการเชิงปริมาณขั้นสูงเพื่อแยกแยะความสัมพันธ์เชิงสาเหตุ (Causal Effect) จากข้อมูลเชิงสังเกตและข้อมูลบริหารภาครัฐ เชี่ยวชาญกลยุทธ์การระบุตัวแปรในเศรษฐมิติจุลภาคเพื่อประเมินผลกระทบจากช็อคนโยบาย ตัวทวีคูณทางการคลัง และการตอบสนองของตลาดแรงงาน
+          </p>
+
+          <ul class="interest-topics i18n-en">
             <li>Difference-in-differences (DiD) with staggered adoption</li>
             <li>Regression discontinuity designs (RDD) in policy thresholds</li>
             <li>Instrumental variables (IV) and endogeneity mitigation</li>
             <li>Synthetic control methods for subnational policy analysis</li>
+          </ul>
+          <ul class="interest-topics i18n-th">
+            <li>วิธีเปรียบเทียบความแตกต่างซ้อนความแตกต่าง (DiD) แบบการนำนโยบายไปใช้เป็นลำดับขั้น</li>
+            <li>การออกแบบความไม่ต่อเนื่องของการถดถอย (RDD) ตามเกณฑ์นโยบาย</li>
+            <li>ตัวแปรเครื่องมือ (Instrumental Variables) และการแก้ไขปัญหาตัวแปรภายใน (Endogeneity)</li>
+            <li>วิธีกลุ่มควบคุมสังเคราะห์ (Synthetic Control Methods) สำหรับการวิเคราะห์นโยบายระดับพื้นที่</li>
           </ul>
         </div>
 
@@ -240,17 +397,30 @@
         <div class="interest-card">
           <div class="interest-top">
             <span class="interest-index">AREA // 04</span>
-            <span class="interest-tag">Computational Tools</span>
+            <span class="interest-tag i18n-en">Computational Tools</span>
+            <span class="interest-tag i18n-th">เครื่องมือเชิงคำนวณ</span>
           </div>
-          <h3 class="interest-title">AI for Economic Research</h3>
-          <p class="interest-desc">
+          <h3 class="interest-title i18n-en">AI for Economic Research</h3>
+          <h3 class="interest-title i18n-th">AI เพื่องานวิจัยเศรษฐศาสตร์</h3>
+
+          <p class="interest-desc i18n-en">
             Harnessing machine learning algorithms, large language models, and high-dimensional data pipelines to modernize economic modeling and public sector auditing. Automating institutional document processing and detecting fiscal anomalies across municipal and national accounts.
           </p>
-          <ul class="interest-topics">
+          <p class="interest-desc i18n-th">
+            ประยุกต์ใช้อัลกอริทึมแมชชีนเลิร์นนิง โมเดลภาษาขนาดใหญ่ (LLM) และการจัดการข้อมูลมิติสูงเพื่อยกระดับการสร้างตัวแบบทางเศรษฐศาสตร์และการตรวจสอบภาครัฐ เพิ่มระบบอัตโนมัติในการอ่านวิเคราะห์เอกสารทางการ และตรวจจับความผิดปกติทางการเงินในบัญชีงบประมาณระดับท้องถิ่นและระดับชาติ
+          </p>
+
+          <ul class="interest-topics i18n-en">
             <li>Natural language processing for audit reports and legislation</li>
             <li>High-dimensional regularized regression in budget forecasting</li>
             <li>Unsupervised anomaly detection in public procurement records</li>
             <li>Automated literature synthesis and empirical reproducibility</li>
+          </ul>
+          <ul class="interest-topics i18n-th">
+            <li>การประมวลผลภาษาธรรมชาติ (NLP) สำหรับรายงานการตรวจสอบและตัวบทกฎหมาย</li>
+            <li>แบบจำลองการถดถอยมิติสูงแบบ Regularization เพื่อการพยากรณ์งบประมาณ</li>
+            <li>การตรวจจับความผิดปกติแบบ Unsupervised ในข้อมูลการจัดซื้อจัดจ้างภาครัฐ</li>
+            <li>การสังเคราะห์วรรณกรรมวิจัยอัตโนมัติและการสร้างความสามารถในการทำซ้ำได้ของงานวิจัย</li>
           </ul>
         </div>
 
@@ -266,10 +436,17 @@
     <div class="container">
       
       <div class="section-header">
-        <div class="section-label">03 // Scholarly Inquiries</div>
-        <h2 class="section-title">Featured Projects</h2>
-        <p class="section-subtitle">
+        <div class="section-label i18n-en">03 // Scholarly Inquiries</div>
+        <div class="section-label i18n-th">03 // บทความวิเคราะห์ทางวิชาการ</div>
+
+        <h2 class="section-title i18n-en">Featured Projects</h2>
+        <h2 class="section-title i18n-th">ผลงานวิเคราะห์และบทความเด่น</h2>
+
+        <p class="section-subtitle i18n-en">
           Graduate-level analytical essays exploring foundational economic tenets, strategic game-theoretic models, and their critical implications for modern public policy.
+        </p>
+        <p class="section-subtitle i18n-th">
+          บทความวิเคราะห์เชิงลึกระดับบัณฑิตศึกษาที่สำรวจหลักคิดเศรษฐศาสตร์รากฐาน ตัวแบบทฤษฎีเกมเชิงกลยุทธ์ และนัยสำคัญต่อการออกแบบนโยบายสาธารณะยุคปัจจุบัน
         </p>
       </div>
 
@@ -283,28 +460,42 @@
           <div class="project-header-bar">
             <div class="project-type-chip">
               <span class="dot"></span>
-              <span>ESSAY // 01 &bull; ECONOMIC METHODOLOGY & PUBLIC POLICY</span>
+              <span class="i18n-en">ESSAY // 01 &bull; ECONOMIC METHODOLOGY & PUBLIC POLICY</span>
+              <span class="i18n-th">บทความวิเคราะห์ // 01 &bull; ระเบียบวิธีคิดเศรษฐศาสตร์และนโยบายสาธารณะ</span>
             </div>
             <div class="project-meta-pills">
-              <span class="meta-pill">Theoretical Economics</span>
-              <span class="meta-pill">Bastiat / Hazlitt Framework</span>
-              <span class="meta-pill">1,300+ Words</span>
+              <span class="meta-pill i18n-en">Theoretical Economics</span>
+              <span class="meta-pill i18n-th">เศรษฐศาสตร์ทฤษฎี</span>
+              <span class="meta-pill i18n-en">Bastiat / Hazlitt Framework</span>
+              <span class="meta-pill i18n-th">กรอบแนวคิด Bastiat & Hazlitt</span>
+              <span class="meta-pill i18n-en">1,900+ Words</span>
+              <span class="meta-pill i18n-th">วิเคราะห์เชิงลึก 1,900+ คำ</span>
             </div>
           </div>
 
           <div class="project-summary-body">
-            <h3 class="project-title">Economics in One Lesson: Key Economic Concepts from Henry Hazlitt</h3>
-            <div class="project-subtitle">
+            <h3 class="project-title i18n-en">Economics in One Lesson: Key Economic Concepts from Henry Hazlitt</h3>
+            <h3 class="project-title i18n-th">Economics in One Lesson: สาระสำคัญทางเศรษฐศาสตร์จาก Henry Hazlitt</h3>
+
+            <div class="project-subtitle i18n-en">
               An Analytical Inquiry into Seen vs. Unseen Consequences, Allocative Efficiency, and Modern Public Finance Fallacies
             </div>
+            <div class="project-subtitle i18n-th">
+              การวิเคราะห์เชิงวิพากษ์ว่าด้วยผลลัพธ์ที่มองเห็นกับมองไม่เห็น ประสิทธิภาพในการจัดสรรทรัพยากร และภาพลวงตาทางการคลังยุคใหม่
+            </div>
 
-            <div class="project-abstract">
+            <div class="project-abstract i18n-en">
               <strong>Executive Summary:</strong> Originally published in 1946, Henry Hazlitt’s <em>Economics in One Lesson</em> synthesizes classical microeconomic realism into a singular, devastating epistemological proposition: the fatal fallacy of evaluating policies solely by their immediate, visible benefits to a targeted constituency while ignoring their long-term, dispersed costs across society. This analytical essay deconstructs Hazlitt’s foundational thesis through the lens of modern graduate economics, evaluating opportunity cost, the broken window fallacy, distortionary public spending, price controls, statutory labor mandates, and their profound relevance to contemporary industrial policy and fiscal auditing.
+            </div>
+            <div class="project-abstract i18n-th">
+              <strong>บทสรุปผู้บริหาร:</strong> ตีพิมพ์ครั้งแรกในปี 1946 ผลงาน <em>Economics in One Lesson</em> ของ Henry Hazlitt ได้กลั่นกรองสัจธรรมทางเศรษฐศาสตร์จุลภาคคลาสสิกสู่ข้อเสนอทางญาณวิทยาที่ทรงพลัง: ภาพลวงตาอันตรายของการประเมินนโยบายสาธารณะเพียงแค่ประโยชน์เฉพาะหน้าและมองเห็นได้ชัดต่อกลุ่มเป้าหมายเฉพาะกลุ่ม โดยละเลยต้นทุนระยะยาวที่กระจายไปทั่วสังคม บทความวิเคราะห์ชิ้นนี้ถอดรหัสวิทยานิพนธ์ของ Hazlitt ผ่านมุมมองเศรษฐศาสตร์ระดับบัณฑิตศึกษา ร่วมประเมินต้นทุนค่าเสียโอกาส ภาพลวงตาหน้าต่างแตก การใช้จ่ายภาครัฐที่บิดเบือนตลาด การควบคุมราคา กฎหมายค่าจ้างขั้นต่ำ และความเชื่อมโยงต่อการตรวจสอบการคลังและนโยบายอุตสาหกรรมร่วมสมัย
             </div>
 
             <div class="project-key-themes">
-              <div class="themes-heading">Key Analytical Themes Addressed:</div>
-              <div class="theme-chips">
+              <div class="themes-heading i18n-en">Key Analytical Themes Addressed:</div>
+              <div class="themes-heading i18n-th">ประเด็นการวิเคราะห์หลัก:</div>
+
+              <div class="theme-chips i18n-en">
                 <span class="theme-chip">The One Lesson Defined</span>
                 <span class="theme-chip">Bastiat’s Seen vs. Unseen</span>
                 <span class="theme-chip">Opportunity Cost & Scarcity</span>
@@ -314,16 +505,29 @@
                 <span class="theme-chip">Labor Economics & Minimum Wages</span>
                 <span class="theme-chip">Modern Industrial Policy Relevance</span>
               </div>
+              <div class="theme-chips i18n-th">
+                <span class="theme-chip">หนึ่งบทเรียนแห่งเศรษฐศาสตร์</span>
+                <span class="theme-chip">สิ่งที่มองเห็นกับสิ่งที่มองไม่เห็น</span>
+                <span class="theme-chip">ต้นทุนค่าเสียโอกาสและความขาดแคลน</span>
+                <span class="theme-chip">ภาพลวงตาหน้าต่างแตก</span>
+                <span class="theme-chip">Deadweight Loss จากการใช้จ่ายภาครัฐ</span>
+                <span class="theme-chip">การควบคุมราคาและการขาดแคลนเทียม</span>
+                <span class="theme-chip">เศรษฐศาสตร์แรงงานและค่าจ้างขั้นต่ำ</span>
+                <span class="theme-chip">นัยสำคัญต่อนโยบายอุตสาหกรรมปัจจุบัน</span>
+              </div>
             </div>
 
             <div class="project-actions">
               <button class="btn-expand" data-target="drawer-hazlitt" aria-expanded="false">
-                <span class="btn-text">Read Full Analytical Essay</span>
+                <span class="btn-text">
+                  <span class="i18n-en">Read Full Analytical Essay</span>
+                  <span class="i18n-th">อ่านบทความวิเคราะห์ฉบับเต็ม</span>
+                </span>
                 <span class="expand-icon">&darr;</span>
               </button>
               <div class="word-count-badge">
-                <span>Length:</span>
-                <strong>~1,350 Words (Graduate Essay)</strong>
+                <span class="i18n-en">Length: <strong>~1,970 Words (Full Scholarly Essay)</strong></span>
+                <span class="i18n-th">ความยาว: <strong>~1,970 คำ (บทความวิชาการฉบับสมบูรณ์)</strong></span>
               </div>
             </div>
           </div>
@@ -332,133 +536,216 @@
           <div class="essay-drawer" id="drawer-hazlitt">
             <article class="essay-article">
               
-              <div class="essay-toc">
-                <div class="essay-toc-title">Table of Analytical Sections</div>
-                <ul class="essay-toc-list">
-                  <li><a href="#hazlitt-sec1">1. The Epistemological Challenge</a></li>
-                  <li><a href="#hazlitt-sec2">2. The Axiomatic Heart: The One Lesson</a></li>
-                  <li><a href="#hazlitt-sec3">3. The Seen vs. The Unseen Consequences</a></li>
-                  <li><a href="#hazlitt-sec4">4. The Irreducible Reality of Opportunity Cost</a></li>
-                  <li><a href="#hazlitt-sec5">5. The Broken Window Fallacy Deconstructed</a></li>
-                  <li><a href="#hazlitt-sec6">6. Public Spending & Fiscal Illusion</a></li>
-                  <li><a href="#hazlitt-sec7">7. Price Ceilings, Floors & Allocative Distortions</a></li>
-                  <li><a href="#hazlitt-sec8">8. Labor Markets, Wages & Employment Mandates</a></li>
-                  <li><a href="#hazlitt-sec9">9. Policy Relevance in the 21st Century</a></li>
-                  <li><a href="#hazlitt-sec10">10. Conclusion: Why Hazlitt Matters Today</a></li>
-                </ul>
-              </div>
-
-              <div class="essay-body">
-                
-                <h3 id="hazlitt-sec1">1. The Epistemological Challenge of Economic Reasoning</h3>
-                <p>
-                  Economic analysis is distinguished from engineering and the natural sciences not by its reliance on mathematical abstraction, but by the peculiar nature of its subject matter: human action under institutional constraints and pervasive scarcity. When an engineer constructs a physical bridge, the structural integrity of the bridge is directly visible, localized, and measurable. The failure of a beam manifests as an immediate observable rupture. In stark contrast, when a sovereign state intervenes in an economic market, the immediate consequences are frequently concentrated, organized, and politically triumphant, whereas the long-run systemic repercussions remain dispersed, latent, and mathematically obscured.
-                </p>
-                <p>
-                  Henry Hazlitt, writing in the immediate aftermath of the Second World War in 1946, recognized this profound epistemological asymmetry. In <em>Economics in One Lesson</em>, Hazlitt did not aim to produce an idiosyncratic theoretical school; rather, he set out to distill classical and Austrian price theory into an unyielding heuristic for evaluating economic policy. Far from a simplistic defense of laissez-faire dogma, Hazlitt’s work is an incisive critique of cognitive bias in economic governance—a rigorous exposure of the systematic errors that arise when policymakers mistake localized accounting transfers for aggregate wealth creation.
-                </p>
-
-                <h3 id="hazlitt-sec2">2. The Axiomatic Heart: "The One Lesson" Formulated</h3>
-                <p>
-                  At the core of Hazlitt’s treatise lies a single, rigorously formulated proposition that serves as the diagnostic prism for every subsequent chapter:
-                </p>
-                <blockquote>
-                  <p>
-                    “The art of economics consists in looking not merely at the immediate but at the longer effects of any act or policy; it consists in tracing the consequences of that policy not merely for one group but for all groups.”
-                  </p>
-                  <cite>— Henry Hazlitt, Economics in One Lesson (1946)</cite>
-                </blockquote>
-                <p>
-                  Deconstructed into analytical terms, Hazlitt’s lesson imposes two simultaneous requirements upon any serious economist or policy auditor. The first is an <strong>intertemporal constraint</strong>: an analyst must trace the causal chain beyond the instantaneous primary period ($t_0$) into dynamic subsequent periods ($t_1, t_2, \dots, t_n$). The second is a <strong>general equilibrium constraint</strong>: an analyst must examine the net incidence across the entirety of the economic system rather than focusing exclusively on the partial equilibrium outcomes of the privileged target demographic.
-                </p>
-                <p>
-                  Almost all economic fallacies, Hazlitt demonstrates, stem from violating one or both of these constraints. The populist politician or self-interested industry lobbyist consistently presents a truncated narrative: they display the immediate gain conferred upon a visible cohort, while systematically neglecting the invisible opportunity costs diffused across millions of quiet consumers and taxpayers.
-                </p>
-
-                <h3 id="hazlitt-sec3">3. The Seen vs. The Unseen: Bastiat’s Legacy Formalized</h3>
-                <p>
-                  Hazlitt explicitly grounds his intellectual lineage in the 1850 essay <em>Ce qu'on voit et ce qu'on ne voit pas</em> ("That Which Is Seen and That Which Is Not Seen") by the French classical economist Frédéric Bastiat. Bastiat observed that between a good economist and a bad one, the difference is singular: the bad economist confines himself to the visible effect that is already produced, whereas the good economist takes into account both the effect that can be seen and those which must be foreseen.
-                </p>
-                <p>
-                  In modern econometric terminology, this distinction reflects the fundamental problem of <strong>causal inference and the counterfactual</strong>. What is "seen" represents the realized empirical state under treatment ($Y_1$). What is "unseen" is the unobserved counterfactual state ($Y_0$)—what would have transpired in the absence of the statutory intervention. Because the counterfactual is never directly observable in non-experimental macroeconomic contexts, untrained observers and opportunistic advocates instinctively attribute total social welfare gains to the visible treatment group, committing a severe attribution error.
-                </p>
-
-                <h3 id="hazlitt-sec4">4. Opportunity Cost as an Analytical Anchor</h3>
-                <p>
-                  Scarcity is the primary axiom of economic science. Because resources—labor, physical capital, raw materials, and cognitive ingenuity—are finite, the allocation of any resource toward Project A necessarily precludes its simultaneous deployment toward Projects B, C, or D. Consequently, the true economic cost of any policy is not the nominal currency expended from the public treasury, but the highest-valued forgone alternative: the <em>opportunity cost</em>.
-                </p>
-                <p>
-                  Hazlitt demonstrates that fiscal policymakers suffer from a persistent accounting illusion. When the state appropriates 100 million dollars to construct a public monument, legislators applaud the construction jobs created and the stone erected. The accounting balance sheet records tangible assets. However, the economic balance sheet must record the capital subtracted through taxation from private households, who would have otherwise deployed those funds toward home construction, medical care, private enterprise capitalization, or consumer savings. The jobs that were <em>not</em> created in those decentralized sectors are precisely the unseen opportunity costs of the state project.
-                </p>
-
-                <h3 id="hazlitt-sec5">5. Deconstructing the Broken Window Fallacy: Destruction as Wealth Destruction</h3>
-                <p>
-                  The most celebrated intellectual archetype in the book is Hazlitt’s expansion of Bastiat’s parable of the broken window. A hoodlum hurls a brick through a baker’s storefront. A crowd gathers, initially expressing sympathy. Soon, however, a sophisticated bystander begins to philosophize: the broken window is actually an economic blessing in disguise. The baker must now spend 250 dollars to hire a glazier. The glazier will earn revenue and subsequently spend it at the tailor’s shop; the tailor will patronize the cobbler; and thus, purchasing power ripples through the township, stimulating aggregate demand.
-                </p>
-                <p>
-                  Hazlitt exposes the fatal flaw in this logic by restoring the baker to the equation. Had the window not been broken, the baker would have possessed both an intact window <em>and</em> 250 dollars to purchase a tailored suit. Instead, after repairing the window, he possesses merely the window and no suit. The community has not gained an additional 250 dollars of wealth; it has suffered the physical annihilation of capital goods. What the crowd witnesses is the glazier receiving money (the seen); what the crowd forgets is the tailor who never received the baker’s order for a new suit (the unseen).
-                </p>
-                <div class="essay-callout">
-                  <div class="essay-callout-title">Macroeconomic Implication: War & Disaster Reconstruction</div>
-                  <p>
-                    Hazlitt extends this parable directly to the catastrophic fallacy that war or natural disasters stimulate prosperity. Destruction of infrastructure does not generate authentic demand; it merely diverts scarce productive capacity toward replacement rather than advancement, impoverishing society in real capital terms.
-                  </p>
+              <!-- English Full Essay -->
+              <div class="i18n-en">
+                <div class="essay-toc">
+                  <div class="essay-toc-title">Table of Analytical Sections</div>
+                  <ul class="essay-toc-list">
+                    <li><a href="#hazlitt-sec1">1. The Epistemological Challenge</a></li>
+                    <li><a href="#hazlitt-sec2">2. The Axiomatic Heart: The One Lesson</a></li>
+                    <li><a href="#hazlitt-sec3">3. The Seen vs. The Unseen Consequences</a></li>
+                    <li><a href="#hazlitt-sec4">4. The Irreducible Reality of Opportunity Cost</a></li>
+                    <li><a href="#hazlitt-sec5">5. The Broken Window Fallacy Deconstructed</a></li>
+                    <li><a href="#hazlitt-sec6">6. Public Spending & Fiscal Illusion</a></li>
+                    <li><a href="#hazlitt-sec7">7. Price Ceilings, Floors & Distortions</a></li>
+                    <li><a href="#hazlitt-sec8">8. Labor Markets & Employment Mandates</a></li>
+                    <li><a href="#hazlitt-sec9">9. Policy Relevance in the 21st Century</a></li>
+                    <li><a href="#hazlitt-sec10">10. Conclusion: Why Hazlitt Matters Today</a></li>
+                  </ul>
                 </div>
 
-                <h3 id="hazlitt-sec6">6. The Mirage of Government Intervention and Public Spending</h3>
-                <p>
-                  When examining public works, Hazlitt draws an essential distinction between projects created purely for their essential administrative utility (such as judicial infrastructure or vital public sanitation) and projects initiated under the pretext of "creating employment" or "stimulating the economy."
-                </p>
-                <p>
-                  When public investments are pursued for the primary objective of job creation, the calculus of cost-benefit efficiency is inverted. Government cannot distribute purchasing power that it does not first extract through taxation, sovereign borrowing, or monetary debasement. If funded by taxes, every public dollar creates one visible job in a public works program while destroying the equivalent purchasing power across private taxpayers, destroying latent jobs elsewhere. If funded by deficit debt, it imposes future tax liabilities or crowds out private investment; if funded through inflation, it imposes a regressive hidden levy on cash balances. Public spending can redirect the vectors of economic output, but it cannot miraculously conjure aggregate wealth ex nihilo without raising allocative productivity.
-                </p>
+                <div class="essay-body">
+                  <h3 id="hazlitt-sec1">1. The Epistemological Challenge of Economic Reasoning</h3>
+                  <p>
+                    Economic analysis is distinguished from engineering and the natural sciences not by its reliance on mathematical abstraction, but by the peculiar nature of its subject matter: human action under institutional constraints and pervasive scarcity. When an engineer constructs a physical bridge, the structural integrity of the bridge is directly visible, localized, and measurable. The failure of a beam manifests as an immediate observable rupture. In stark contrast, when a sovereign state intervenes in an economic market, the immediate consequences are frequently concentrated, organized, and politically triumphant, whereas the long-run systemic repercussions remain dispersed, latent, and mathematically obscured.
+                  </p>
+                  <p>
+                    Henry Hazlitt, writing in the immediate aftermath of the Second World War in 1946, recognized this profound epistemological asymmetry. In <em>Economics in One Lesson</em>, Hazlitt did not aim to produce an idiosyncratic theoretical school; rather, he set out to distill classical and Austrian price theory into an unyielding heuristic for evaluating economic policy. Far from a simplistic defense of laissez-faire dogma, Hazlitt’s work is an incisive critique of cognitive bias in economic governance—a rigorous exposure of the systematic errors that arise when policymakers mistake localized accounting transfers for aggregate wealth creation.
+                  </p>
 
-                <h3 id="hazlitt-sec7">7. Price Controls: Suppressing Price Signals and Inducing Shortages</h3>
-                <p>
-                  Hazlitt devotes incisive analysis to government price fixing—both price ceilings and price floors. Prices are not arbitrary markers set by bureaucratic benevolence or merchant greed; in a competitive market, prices are vital informational signals summarizing relative scarcity, consumer preferences, and marginal production costs across millions of decentralized agents.
-                </p>
-                <p>
-                  When government imposes a legal <strong>price ceiling</strong> below the market-clearing equilibrium (e.g., rent control or fuel caps), it generates two simultaneous structural distortions:
-                </p>
-                <ul>
-                  <li><strong>Supply Contraction:</strong> At the artificially depressed statutory price, marginal producers can no longer cover marginal costs, causing supply to withdraw, quality to deteriorate, and capital to exit the sector.</li>
-                  <li><strong>Demand Expansion:</strong> Lower nominal prices artificially stimulate consumption beyond true resource availability.</li>
-                </ul>
-                <p>
-                  The inevitable result is a persistent shortage, the proliferation of black markets, non-price rationing mechanisms (such as queues or political favoritism), and deadweight welfare loss. Similarly, when the state introduces <strong>price floors</strong> (such as agricultural subsidies), it incentivizes chronic overproduction, requiring the state to purchase, store, or destroy unsellable surpluses at immense public expense.
-                </p>
+                  <h3 id="hazlitt-sec2">2. The Axiomatic Heart: "The One Lesson" Formulated</h3>
+                  <p>
+                    At the core of Hazlitt’s treatise lies a single, rigorously formulated proposition that serves as the diagnostic prism for every subsequent chapter:
+                  </p>
+                  <blockquote>
+                    <p>
+                      “The art of economics consists in looking not merely at the immediate but at the longer effects of any act or policy; it consists in tracing the consequences of that policy not merely for one group but for all groups.”
+                    </p>
+                    <cite>— Henry Hazlitt, Economics in One Lesson (1946)</cite>
+                  </blockquote>
+                  <p>
+                    Deconstructed into analytical terms, Hazlitt’s lesson imposes two simultaneous requirements upon any serious economist or policy auditor. The first is an <strong>intertemporal constraint</strong>: an analyst must trace the causal chain beyond the instantaneous primary period ($t_0$) into dynamic subsequent periods ($t_1, t_2, \dots, t_n$). The second is a <strong>general equilibrium constraint</strong>: an analyst must examine the net incidence across the entirety of the economic system rather than focusing exclusively on the partial equilibrium outcomes of the privileged target demographic.
+                  </p>
+                  <p>
+                    Almost all economic fallacies, Hazlitt demonstrates, stem from violating one or both of these constraints. The populist politician or self-interested industry lobbyist consistently presents a truncated narrative: they display the immediate gain conferred upon a visible cohort, while systematically neglecting the invisible opportunity costs diffused across millions of quiet consumers and taxpayers.
+                  </p>
 
-                <h3 id="hazlitt-sec8">8. Wages, Employment, and Labor Market Frictions</h3>
-                <p>
-                  Hazlitt tackles the emotional terrain of labor compensation with analytical clarity. Wages, in economic reality, are prices—specifically, the price of labor services. Under competitive conditions, the wage rate of any worker tends toward their <em>marginal revenue product</em> (MRP).
-                </p>
-                <p>
-                  When the state enacts a mandatory minimum wage by legislative decree above the marginal productivity of certain low-skilled, inexperienced, or marginalized workers, the law does not automatically elevate their productivity. Instead, it renders it illegal for employers to hire them at their current market value. The visible consequence is higher wages for the retained, highly skilled workforce; the unseen consequence is the disemployment, reduced training opportunities, and formal exclusion of the most vulnerable labor cohorts. Hazlitt stresses that the only authentic, sustainable path to raising real wages is by increasing marginal labor productivity through capital accumulation, superior tools, technological innovation, and human capital development.
-                </p>
+                  <h3 id="hazlitt-sec3">3. The Seen vs. The Unseen: Bastiat’s Legacy Formalized</h3>
+                  <p>
+                    Hazlitt explicitly grounds his intellectual lineage in the 1850 essay <em>Ce qu'on voit et ce qu'on ne voit pas</em> ("That Which Is Seen and That Which Is Not Seen") by the French classical economist Frédéric Bastiat. Bastiat observed that between a good economist and a bad one, the difference is singular: the bad economist confines himself to the visible effect that is already produced, whereas the good economist takes into account both the effect that can be seen and those which must be foreseen.
+                  </p>
+                  <p>
+                    In modern econometric terminology, this distinction reflects the fundamental problem of <strong>causal inference and the counterfactual</strong>. What is "seen" represents the realized empirical state under treatment ($Y_1$). What is "unseen" is the unobserved counterfactual state ($Y_0$)—what would have transpired in the absence of the statutory intervention. Because the counterfactual is never directly observable in non-experimental macroeconomic contexts, untrained observers and opportunistic advocates instinctively attribute total social welfare gains to the visible treatment group, committing a severe attribution error.
+                  </p>
 
-                <h3 id="hazlitt-sec9">9. Policy Relevance Today: Industrial Subsidies, Tariffs, and Pension Liabilities</h3>
-                <p>
-                  Although written in 1946, Hazlitt’s analytical paradigm is astonishingly relevant to contemporary public finance debates in the 2020s. Consider three pressing modern policy arenas:
-                </p>
-                <ul>
-                  <li><strong>Modern Industrial Policy & Tariffs:</strong> Contemporary resurgences in protectionism, selective industrial subsidies, and targeted tariffs mirror Hazlitt’s critique of trade barriers. Tariffs protect domestic producer jobs in visible, politically connected sectors (the seen), while compelling domestic consumers and downstream manufacturing industries to pay higher prices, reducing disposable real incomes and suppressing export competitiveness (the unseen).</li>
-                  <li><strong>Public Sector Compensation & Civil Service Pensions:</strong> In government audit and fiscal analysis, public sector pension commitments are frequently treated as off-balance-sheet items. Politicians grant generous defined-benefit pension adjustments today (seen immediate labor peace) while pushing the colossal actuarial funding shortfalls onto future generations of taxpayers decades later (unseen intergenerational liability).</li>
-                  <li><strong>Green Transition Subsidies vs. Market Incentives:</strong> Subsidizing politically favored green energy firms creates headline ribbon-cutting events, but when evaluated against the unseen taxes, regulatory distortions, and misallocated capital, it risks repeating Hazlitt’s warnings regarding state-directed capital allocation.</li>
-                </ul>
+                  <h3 id="hazlitt-sec4">4. Opportunity Cost as an Analytical Anchor</h3>
+                  <p>
+                    Scarcity is the primary axiom of economic science. Because resources—labor, physical capital, raw materials, and cognitive ingenuity—are finite, the allocation of any resource toward Project A necessarily precludes its simultaneous deployment toward Projects B, C, or D. Consequently, the true economic cost of any policy is not the nominal currency expended from the public treasury, but the highest-valued forgone alternative: the <em>opportunity cost</em>.
+                  </p>
+                  <p>
+                    Hazlitt demonstrates that fiscal policymakers suffer from a persistent accounting illusion. When the state appropriates 100 million dollars to construct a public monument, legislators applaud the construction jobs created and the stone erected. The accounting balance sheet records tangible assets. However, the economic balance sheet must record the capital subtracted through taxation from private households, who would have otherwise deployed those funds toward home construction, medical care, private enterprise capitalization, or consumer savings. The jobs that were <em>not</em> created in those decentralized sectors are precisely the unseen opportunity costs of the state project.
+                  </p>
 
-                <h3 id="hazlitt-sec10">10. Epistemological Vigilance: Why Hazlitt Matters for Students of Contemporary Economics</h3>
-                <p>
-                  For the modern graduate student in economics and the professional public finance auditor, Hazlitt’s <em>Economics in One Lesson</em> serves as an essential methodological compass. It does not supplant advanced econometrics or mathematical microeconomics; rather, it provides the philosophical discipline necessary to interpret them correctly.
-                </p>
-                <p>
-                  Sophisticated empirical tools—such as difference-in-differences, synthetic controls, and regression discontinuity—are ultimately attempts to mathematically reconstruct Bastiat’s "unseen" counterfactual. Without Hazlitt’s foundational insight into general equilibrium adjustments and opportunity costs, empirical practitioners risk falling prey to the very tunnel vision that Hazlitt warned against: celebrating localized, short-run econometric significance while missing macroeconomic misallocation and institutional decay. Hazlitt’s lesson remains the ultimate antidote to fiscal complacency, reminding us that sound economics requires intellectual vigilance, systemic awareness, and a relentless commitment to tracing the full consequences of state power.
-                </p>
+                  <h3 id="hazlitt-sec5">5. Deconstructing the Broken Window Fallacy: Destruction as Wealth Destruction</h3>
+                  <p>
+                    The most celebrated intellectual archetype in the book is Hazlitt’s expansion of Bastiat’s parable of the broken window. A hoodlum hurls a brick through a baker’s storefront. A crowd gathers, initially expressing sympathy. Soon, however, a sophisticated bystander begins to philosophize: the broken window is actually an economic blessing in disguise. The baker must now spend 250 dollars to hire a glazier. The glazier will earn revenue and subsequently spend it at the tailor’s shop; the tailor will patronize the cobbler; and thus, purchasing power ripples through the township, stimulating aggregate demand.
+                  </p>
+                  <p>
+                    Hazlitt exposes the fatal flaw in this logic by restoring the baker to the equation. Had the window not been broken, the baker would have possessed both an intact window <em>and</em> 250 dollars to purchase a tailored suit. Instead, after repairing the window, he possesses merely the window and no suit. The community has not gained an additional 250 dollars of wealth; it has suffered the physical annihilation of capital goods. What the crowd witnesses is the glazier receiving money (the seen); what the crowd forgets is the tailor who never received the baker’s order for a new suit (the unseen).
+                  </p>
+                  <div class="essay-callout">
+                    <div class="essay-callout-title">Macroeconomic Implication: War & Disaster Reconstruction</div>
+                    <p>
+                      Hazlitt extends this parable directly to the catastrophic fallacy that war or natural disasters stimulate prosperity. Destruction of infrastructure does not generate authentic demand; it merely diverts scarce productive capacity toward replacement rather than advancement, impoverishing society in real capital terms.
+                    </p>
+                  </div>
 
+                  <h3 id="hazlitt-sec6">6. The Mirage of Government Intervention and Public Spending</h3>
+                  <p>
+                    When examining public works, Hazlitt draws an essential distinction between projects created purely for their essential administrative utility (such as judicial infrastructure or vital public sanitation) and projects initiated under the pretext of "creating employment" or "stimulating the economy."
+                  </p>
+                  <p>
+                    When public investments are pursued for the primary objective of job creation, the calculus of cost-benefit efficiency is inverted. Government cannot distribute purchasing power that it does not first extract through taxation, sovereign borrowing, or monetary debasement. If funded by taxes, every public dollar creates one visible job in a public works program while destroying the equivalent purchasing power across private taxpayers, destroying latent jobs elsewhere. If funded by deficit debt, it imposes future tax liabilities or crowds out private investment; if funded through inflation, it imposes a regressive hidden levy on cash balances. Public spending can redirect the vectors of economic output, but it cannot miraculously conjure aggregate wealth ex nihilo without raising allocative productivity.
+                  </p>
+
+                  <h3 id="hazlitt-sec7">7. Price Controls: Suppressing Price Signals and Inducing Shortages</h3>
+                  <p>
+                    Hazlitt devotes incisive analysis to government price fixing—both price ceilings and price floors. Prices are not arbitrary markers set by bureaucratic benevolence or merchant greed; in a competitive market, prices are vital informational signals summarizing relative scarcity, consumer preferences, and marginal production costs across millions of decentralized agents.
+                  </p>
+                  <p>
+                    When government imposes a legal <strong>price ceiling</strong> below the market-clearing equilibrium (e.g., rent control or fuel caps), it generates two simultaneous structural distortions: supply contraction and demand expansion. The inevitable result is a persistent shortage, the proliferation of black markets, non-price rationing mechanisms, and deadweight welfare loss. Similarly, when the state introduces <strong>price floors</strong> (such as agricultural subsidies), it incentivizes chronic overproduction, requiring the state to purchase, store, or destroy unsellable surpluses at immense public expense.
+                  </p>
+
+                  <h3 id="hazlitt-sec8">8. Wages, Employment, and Labor Market Frictions</h3>
+                  <p>
+                    Hazlitt tackles the emotional terrain of labor compensation with analytical clarity. Wages, in economic reality, are prices—specifically, the price of labor services. Under competitive conditions, the wage rate of any worker tends toward their <em>marginal revenue product</em> (MRP).
+                  </p>
+                  <p>
+                    When the state enacts a mandatory minimum wage by legislative decree above the marginal productivity of certain low-skilled, inexperienced, or marginalized workers, the law does not automatically elevate their productivity. Instead, it renders it illegal for employers to hire them at their current market value. The visible consequence is higher wages for the retained, highly skilled workforce; the unseen consequence is the disemployment, reduced training opportunities, and formal exclusion of the most vulnerable labor cohorts. Hazlitt stresses that the only authentic, sustainable path to raising real wages is by increasing marginal labor productivity through capital accumulation, superior tools, technological innovation, and human capital development.
+                  </p>
+
+                  <h3 id="hazlitt-sec9">9. Policy Relevance Today: Industrial Subsidies, Tariffs, and Pension Liabilities</h3>
+                  <p>
+                    Although written in 1946, Hazlitt’s analytical paradigm is astonishingly relevant to contemporary public finance debates in the 2020s. Modern resurgences in protectionism, selective industrial subsidies, and targeted tariffs mirror Hazlitt’s critique of trade barriers: tariffs protect domestic producer jobs in visible, politically connected sectors (the seen), while compelling domestic consumers and downstream manufacturing industries to pay higher prices, reducing disposable real incomes and suppressing export competitiveness (the unseen). In government audit and fiscal analysis, public sector pension commitments are frequently treated as off-balance-sheet items: politicians grant generous defined-benefit adjustments today while pushing the colossal actuarial funding shortfalls onto future generations of taxpayers decades later.
+                  </p>
+
+                  <h3 id="hazlitt-sec10">10. Epistemological Vigilance: Why Hazlitt Matters for Students of Contemporary Economics</h3>
+                  <p>
+                    For the modern graduate student in economics and the professional public finance auditor, Hazlitt’s <em>Economics in One Lesson</em> serves as an essential methodological compass. It does not supplant advanced econometrics or mathematical microeconomics; rather, it provides the philosophical discipline necessary to interpret them correctly. Sophisticated empirical tools are ultimately attempts to mathematically reconstruct Bastiat’s "unseen" counterfactual. Without Hazlitt’s foundational insight into general equilibrium adjustments and opportunity costs, empirical practitioners risk falling prey to localized tunnel vision. Hazlitt’s lesson remains the ultimate antidote to fiscal complacency, reminding us that sound economics requires intellectual vigilance, systemic awareness, and a relentless commitment to tracing the full consequences of state power.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Thai Full Essay -->
+              <div class="i18n-th">
+                <div class="essay-toc">
+                  <div class="essay-toc-title">สารบัญหัวข้อการวิเคราะห์</div>
+                  <ul class="essay-toc-list">
+                    <li><a href="#hazlitt-th-sec1">1. ความท้าทายทางญาณวิทยาในการคิดเชิงเศรษฐศาสตร์</a></li>
+                    <li><a href="#hazlitt-th-sec2">2. แก่นแกนแห่งสัจธรรม: หนึ่งบทเรียนที่ตกผลึก</a></li>
+                    <li><a href="#hazlitt-th-sec3">3. ผลลัพธ์ที่มองเห็นกับมองไม่เห็น: มรดกจาก Bastiat</a></li>
+                    <li><a href="#hazlitt-th-sec4">4. ต้นทุนค่าเสียโอกาสในฐานะสมอยึดเหนี่ยวการวิเคราะห์</a></li>
+                    <li><a href="#hazlitt-th-sec5">5. ถอดรหัสภาพลวงตาหน้าต่างแตก</a></li>
+                    <li><a href="#hazlitt-th-sec6">6. การใช้จ่ายภาครัฐและภาพลวงตาทางการคลัง</a></li>
+                    <li><a href="#hazlitt-th-sec7">7. การควบคุมราคาและการบิดเบือนสัญญาณตลาด</a></li>
+                    <li><a href="#hazlitt-th-sec8">8. ตลาดแรงงาน ค่าจ้าง และผลกระทบของการบังคับใช้กฎหมาย</a></li>
+                    <li><a href="#hazlitt-th-sec9">9. นัยสำคัญต่อนโยบายสาธารณะในคริสต์ศตวรรษที่ 21</a></li>
+                    <li><a href="#hazlitt-th-sec10">10. บทสรุป: เหตุใดบทเรียนนี้จึงจำเป็นต่อผู้ศึกษาร่วมสมัย</a></li>
+                  </ul>
+                </div>
+
+                <div class="essay-body">
+                  <h3 id="hazlitt-th-sec1">1. ความท้าทายทางญาณวิทยาในการคิดเชิงเศรษฐศาสตร์</h3>
+                  <p>
+                    การวิเคราะห์ทางเศรษฐศาสตร์มีความแตกต่างอย่างมีนัยสำคัญจากวิศวกรรมศาสตร์และวิทยาศาสตร์ธรรมชาติ ไม่ใช่เพราะการใช้คณิตศาสตร์เชิงนามธรรม แต่เป็นเพราะเนื้อหาแก่นแท้ของการศึกษา: นั่นคือ การกระทำของมนุษย์ภายใต้ข้อจำกัดเชิงสถาบันและความขาดแคลนของทรัพยากร เมื่อวิศวกรสร้างสะพาน ความมั่นคงแข็งแรงของสะพานสามารถมองเห็นและวัดค่าได้โดยตรง ความล้มเหลวของคานสะพานจะปรากฏเป็นรอยร้าวที่ประจักษ์ชัดทันที ในทางตรงกันข้าม เมื่อรัฐบาลเข้าแทรกแซงตลาด ผลลัพธ์ขั้นแรกมักจะรวมศูนย์ ชัดเจน และสร้างคะแนนนิยมทางการเมืองได้อย่างรวดเร็ว ในขณะที่ผลกระทบลูกโซ่ระยะยาวในระดับระบบกลับกระจายตัว ซ่อนเร้น และมองไม่เห็นด้วยตาเปล่า
+                  </p>
+                  <p>
+                    Henry Hazlitt ซึ่งเขียนหนังสือเล่มนี้ในปี 1946 หลังสงครามโลกครั้งที่สอง ตระหนักถึงความไม่สมมาตรทางญาณวิทยานี้เป็นอย่างดี ใน <em>Economics in One Lesson</em> Hazlitt ไม่ได้มุ่งสร้างสำนักคิดทฤษฎีใหม่ที่แปลกแยก หากแต่ต้องการกลั่นทฤษฎีราคาคลาสสิกและออสเตรียนให้กลายเป็น "เข็มทิศเชิงฮิวริสติก" (Heuristic) ที่แน่วแน่ในการประเมินนโยบายสาธารณะ งานของเขาจึงไม่ใช่เพียงการปกป้องแนวคิดตลาดเสรีอย่างผิวเผิน แต่เป็นการวิพากษ์อคติทางความคิดในการบริหารเศรษฐกิจของรัฐอย่างถึงรากถึงโคน
+                  </p>
+
+                  <h3 id="hazlitt-th-sec2">2. แก่นแกนแห่งสัจธรรม: หนึ่งบทเรียนที่ตกผลึก</h3>
+                  <p>
+                    หัวใจสำคัญของหนังสือเล่มนี้สรุปไว้ในประโยคทองอันทรงพลังเพียงประโยคเดียว ซึ่งเป็นปริซึมที่ใช้ส่องมองทุกนโยบายในหนังสือ:
+                  </p>
+                  <blockquote>
+                    <p>
+                      “ศิลปะแห่งเศรษฐศาสตร์อยู่ที่การมองผลกระทบไม่เพียงแต่ในระยะสั้นเฉพาะหน้า แต่ต้องมองผลกระทบระยะยาวของนโยบายนั้นด้วย; มันอยู่ที่การติดตามผลลัพธ์ของนโยบายไม่เพียงแต่ต่อกลุ่มคนกลุ่มเดียว แต่ต้องมองผลลัพธ์ต่อคนทุกกลุ่มในสังคม”
+                    </p>
+                    <cite>— Henry Hazlitt, Economics in One Lesson (1946)</cite>
+                  </blockquote>
+                  <p>
+                    หากถอดรหัสข้อความนี้ในเชิงวิเคราะห์ Hazlitt กำหนดเงื่อนไขบังคับสองประการสำหรับนักเศรษฐศาสตร์และผู้ตรวจสอบนโยบายทุกคน ประการแรกคือ <strong>ข้อจำกัดข้ามเวลา (Intertemporal Constraint)</strong>: นักวิเคราะห์ต้องมองข้ามช่วงเวลาแรก ($t_0$) ไปสู่ผลกระทบเชิงพลวัตในคาบเวลาถัดไป ($t_1, t_2, \dots, t_n$) ประการที่สองคือ <strong>ข้อจำกัดดุลยภาพทั่วไป (General Equilibrium Constraint)</strong>: ต้องพิจารณาผลกระทบสุทธิต่อทั้งระบบเศรษฐกิจ ไม่ใช่ดูเพียงผลลัพธ์ดุลยภาพเฉพาะส่วน (Partial Equilibrium) ของกลุ่มผลประโยชน์ที่รัฐต้องการช่วยเหลือ
+                  </p>
+
+                  <h3 id="hazlitt-th-sec3">3. ผลลัพธ์ที่มองเห็นกับมองไม่เห็น: มรดกจาก Bastiat</h3>
+                  <p>
+                    Hazlitt อ้างอิงรากฐานความคิดโดยตรงจากบทความคลาสสิกในปี 1850 ของ Frédéric Bastiat เรื่อง <em>สิ่งที่มองเห็นกับสิ่งที่มองไม่เห็น</em> Bastiat ชี้ว่าความแตกต่างระหว่างนักเศรษฐศาสตร์ที่แย่กับนักเศรษฐศาสตร์ที่ดีมีเพียงข้อเดียว: นักเศรษฐศาสตร์ที่แย่จะสนใจเฉพาะผลลัพธ์ที่มองเห็นได้ตรงหน้า ขณะที่นักเศรษฐศาสตร์ที่ดีจะคำนึงถึงทั้งผลลัพธ์ที่มองเห็นได้และผลลัพธ์ที่ต้องคาดการณ์ล่วงหน้า
+                  </p>
+                  <p>
+                    ในภาษาเศรษฐมิติยุคใหม่ ความแตกต่างนี้สะท้อนถึงปัญหาพื้นฐานของ <strong>การอนุมานเชิงสาเหตุและสภาวะตรงกันข้ามกับความเป็นจริง (Counterfactual)</strong> สิ่งที่ "มองเห็น" คือสภาวะจริงหลังได้รับนโยบาย ($Y_1$) ส่วนสิ่งที่ "มองไม่เห็น" คือสภาวะตรงกันข้าม ($Y_0$) ว่าหากไม่มีนโยบายนี้เกิดขึ้น สังคมจะเป็นอย่างไร การมองข้ามตัวแปรนี้ทำให้สังคมตกเป็นเหยื่อของการประเมินนโยบายที่บิดเบือน
+                  </p>
+
+                  <h3 id="hazlitt-th-sec4">4. ต้นทุนค่าเสียโอกาสในฐานะสมอยึดเหนี่ยวการวิเคราะห์</h3>
+                  <p>
+                    ความขาดแคลน (Scarcity) คือสัจธรรมข้อแรกของเศรษฐศาสตร์ เมื่อทรัพยากรทุกอย่างมีจำกัด การจัดสรรทรัพยากรไปสู่โครงการ A ย่อมหมายถึงการสละโอกาสในการนำทรัพยากรนั้นไปทำโครงการ B, C หรือ D โดยอัตโนมัติ ต้นทุนที่แท้จริงทางเศรษฐศาสตร์จึงไม่ใช่ตัวเงินงบประมาณ แต่คือทางเลือกที่มีมูลค่าสูงสุดที่ต้องเสียไป นั่นคือ <em>ต้นทุนค่าเสียโอกาส (Opportunity Cost)</em>
+                  </p>
+                  <p>
+                    เมื่อรัฐบาลทุ่มงบประมาณ 100 ล้านบาทสร้างสิ่งก่อสร้างสาธารณะ นักการเมืองมักแถลงข่าวด้วยความภาคภูมิใจถึงตำแหน่งงานที่เกิดขึ้นและตัวอาคารที่จับต้องได้ แต่นักเศรษฐศาสตร์ต้องคำนวณเงินภาษี 100 ล้านบาทที่ถูกดึงไปจากกระเป๋าประชาชน ซึ่งหากไม่ถูกเก็บภาษี ประชาชนจะนำเงินนี้ไปสร้างบ้าน ซื้อยารักษาโรค หรือลงทุนในธุรกิจส่วนตัว ตำแหน่งงานที่ "ไม่ได้เกิดขึ้น" ในภาคเอกชนเหล่านั้นเองคือต้นทุนค่าเสียโอกาสที่มองไม่เห็นของการใช้จ่ายภาครัฐ
+                  </p>
+
+                  <h3 id="hazlitt-th-sec5">5. ถอดรหัสภาพลวงตาหน้าต่างแตก</h3>
+                  <p>
+                    นิทานเปรียบเทียบที่โด่งดังที่สุดคือเรื่องหน้าต่างร้านเบเกอรี่ที่ถูกอันธพาลปาก้อนหินใส่จนแตก ผู้คนในตอนแรกต่างแสดงความเห็นใจ แต่ต่อมามีคนเริ่มคิดว่านี่อาจเป็นผลดีต่อเศรษฐกิจ เพราะเจ้าของร้านต้องจ้างช่างกระจก 250 ดอลลาร์ ช่างกระจกนำเงินไปซื้อสูท ช่างตัดสูทนำเงินไปซื้อรองเท้า ก่อให้เกิดการหมุนเวียนของกำลังซื้อในชุมชน
+                  </p>
+                  <p>
+                    Hazlitt ชี้ให้เห็นข้อผิดพลาดร้ายแรง: หากหน้าต่างไม่แตก เจ้าของร้านจะมีทั้งหน้าต่างสภาพดี <em>และ</em> มีเงิน 250 ดอลลาร์ไปซื้อสูทใหม่ แต่เมื่อหน้าต่างแตก เขาเหลือเพียงหน้าต่างซ่อมเสร็จและไม่มีเงินซื้อสูท ชุมชนไม่ได้ร่ำรวยขึ้น 250 ดอลลาร์ แต่ได้สูญเสียทุนทางกายภาพไปอย่างถาวร สิ่งที่คนเห็นคือช่างกระจกได้เงิน (สิ่งที่มองเห็น) แต่สิ่งที่คนลืมคือช่างตัดสูทที่ไม่ได้รับคำสั่งซื้อ (สิ่งที่มองไม่เห็น) Hazlitt ขยายหลักคิดนี้สู่การทำลายล้างจากสงครามหรือภัยพิบัติ ว่าการทำลายทรัพย์สินไม่เคยสร้างความมั่งคั่งที่แท้จริง แต่เป็นการเบี่ยงเบนทรัพยากรจากการพัฒนาไปสู่การซ่อมแซม
+                  </p>
+
+                  <h3 id="hazlitt-th-sec6">6. การใช้จ่ายภาครัฐและภาพลวงตาทางการคลัง</h3>
+                  <p>
+                    Hazlitt แยกแยะโครงการสาธารณะที่สร้างขึ้นเพื่อประโยชน์ในการบริหารราชการอย่างแท้จริง (เช่น ศาล ระบบสุขาภิบาล) ออกจากโครงการที่สร้างขึ้นเพื่อ "การจ้างงาน" หรือ "การกระตุ้นเศรษฐกิจ" รัฐบาลไม่สามารถแจกจ่ายกำลังซื้อใดๆ ได้ หากไม่ดึงกำลังซื้อนั้นมาจากประชาชนผ่านการเก็บภาษี การกู้ยืมหนี้สาธารณะ หรือการพิมพ์เงิน การสร้างงานหนึ่งตำแหน่งในภาครัฐจึงมักแลกมาด้วยการทำลายตำแหน่งงานในภาคเอกชน การใช้จ่ายภาครัฐจึงเปลี่ยนเพียงทิศทางการไหลของเงิน แต่ไม่อาจเสกสรรความมั่งคั่งใหม่ได้หากไม่ช่วยยกระดับผลิตภาพที่แท้จริง
+                  </p>
+
+                  <h3 id="hazlitt-th-sec7">7. การควบคุมราคาและการบิดเบือนสัญญาณตลาด</h3>
+                  <p>
+                    ราคาในระบบตลาดไม่ได้เกิดขึ้นจากความใจบุญหรือความโลภ แต่เป็นสัญญาณข้อมูล (Information Signals) ที่สรุปความขาดแคลนสัมพัทธ์ ต้นทุนการผลิต และความต้องการของผู้บริโภค การที่รัฐเข้า <strong>ควบคุมเพดานราคา (Price Ceiling)</strong> ต่ำกว่าราคาดุลยภาพ จะทำให้ผู้ผลิตลดกำลังการผลิตลง ขณะที่ผู้บริโภคต้องการซื้อมากขึ้น นำไปสู่การขาดแคลนสินค้า การเกิดตลาดมืด และความสูญเปล่าทางเศรษฐกิจ เช่นเดียวกับ <strong>การประกันราคาขั้นต่ำ (Price Floor)</strong> ที่จูงใจให้เกิดผลผลิตล้นตลาดจนรัฐต้องเสียงบประมาณมหาศาลในการเข้าพยุงราคา
+                  </p>
+
+                  <h3 id="hazlitt-th-sec8">8. ตลาดแรงงาน ค่าจ้าง และผลกระทบของการบังคับใช้กฎหมาย</h3>
+                  <p>
+                    ค่าจ้างแท้จริงคือราคาของบริการแรงงาน ในตลาดที่มีการแข่งขัน ค่าจ้างจะสะท้อน <em>ผลิตภาพหน่วยสุดท้ายของแรงงาน (Marginal Revenue Product)</em> การที่กฎหมายบังคับขึ้นค่าจ้างขั้นต่ำสูงกว่าผลิตภาพที่แท้จริงของแรงงานไร้ฝีมือหรือผู้เริ่มต้นทำงาน ไม่ได้ทำให้แรงงานเหล่านั้นมีความเชี่ยวชาญเพิ่มขึ้นโดยอัตโนมัติ แต่ทำให้กลายเป็นเรื่องผิดกฎหมายที่นายจ้างจะจ้างพวกเขาตามมูลค่าจริง ผลที่มองเห็นคือแรงงานที่ยังคงได้ทำงานมีรายได้เพิ่มขึ้น แต่ผลที่มองไม่เห็นคือการถูกเลิกจ้าง การถูกปิดกั้นโอกาสฝึกฝนทักษะ และการตกงานของแรงงานกลุ่มเปราะบางที่สุด
+                  </p>
+
+                  <h3 id="hazlitt-th-sec9">9. นัยสำคัญต่อนโยบายสาธารณะในคริสต์ศตวรรษที่ 21</h3>
+                  <p>
+                    แม้เขียนขึ้นในปี 1946 แต่กรอบคิดของ Hazlitt ยังคงร่วมสมัยอย่างยิ่งต่อการวิเคราะห์นโยบายในปัจจุบัน:
+                  </p>
+                  <ul>
+                    <li><strong>นโยบายอุตสาหกรรมและการตั้งกำแพงภาษี:</strong> การปกป้องอุตสาหกรรมในประเทศช่วยรักษาตำแหน่งงานในอุตสาหกรรมเป้าหมาย (สิ่งที่มองเห็น) แต่บังคับให้ผู้บริโภคและอุตสาหกรรมปลายน้ำต้องซื้อสินค้าราคาสูงขึ้น ลดทอนกำลังซื้อและขีดความสามารถในการแข่งขันของประเทศ (สิ่งที่มองไม่เห็น)</li>
+                    <li><strong>หนี้สินระบบบำนาญข้าราชการ:</strong> ในงานตรวจสอบการคลัง รัฐบาลมักเพิ่มสิทธิประโยชน์บำนาญในปัจจุบันเพื่อผลประโยชน์ทางการเมืองระยะสั้น (สิ่งที่มองเห็น) แต่ผลักภาระหนี้สินผูกพันทางคณิตศาสตร์ประกันภัยมหาศาลไปให้คนรุ่นถัดไปต้องแบกรับ (สิ่งที่มองไม่เห็น)</li>
+                  </ul>
+
+                  <h3 id="hazlitt-th-sec10">10. บทสรุป: เหตุใดบทเรียนนี้จึงจำเป็นต่อผู้ศึกษาร่วมสมัย</h3>
+                  <p>
+                    สำหรับนักศึกษาเศรษฐศาสตร์และผู้ตรวจสอบการคลังสาธารณะ <em>Economics in One Lesson</em> ทำหน้าที่เป็นเข็มทิศทางระเบียบวิธีคิด มันไม่ได้มาแทนที่เศรษฐมิติขั้นสูง แต่เป็นวินัยทางปรัชญาที่จำเป็นต่อการตีความตัวเลข เครื่องมือเศรษฐมิติสมัยใหม่ (เช่น DiD หรือ RDD) แท้จริงแล้วคือความพยายามทางคณิตศาสตร์ในการค้นหา "สิ่งที่มองไม่เห็น" (Counterfactual) ของ Bastiat หากปราศจากความเข้าใจในดุลยภาพทั่วไปและต้นทุนค่าเสียโอกาส นักวิจัยย่อมเสี่ยงต่อการมองเห็นเพียงความมีนัยสำคัญทางสถิติในระดับย่อยแต่ละเลยความบิดเบือนในระดับมหภาค หนังสือของ Hazlitt จึงเป็นโอสถขนานเอกที่เตือนใจให้เราตรวจสอบผลกระทบของนโยบายอย่างรอบด้านและซื่อตรงต่อความจริงทางเศรษฐศาสตร์เสมอ
+                  </p>
+                </div>
               </div>
 
               <!-- Essay References / Bibliography -->
               <div class="essay-references">
-                <h4>References & Academic Readings</h4>
+                <h4 class="i18n-en">References & Academic Readings</h4>
+                <h4 class="i18n-th">เอกสารอ้างอิงและการอ่านเพิ่มเติม</h4>
                 <ol>
                   <li>Hazlitt, H. (1946). <em>Economics in One Lesson</em>. New York: Harper & Brothers.</li>
                   <li>Bastiat, F. (1850). <em>Ce qu'on voit et ce qu'on ne voit pas</em> (That Which Is Seen and That Which Is Not Seen). Paris: Guillaumin.</li>
@@ -470,9 +757,13 @@
 
               <div class="essay-footer-nav">
                 <button class="btn btn-outline btn-collapse-inner" data-target="drawer-hazlitt">
-                  &uarr; Collapse Essay
+                  <span class="i18n-en">&uarr; Collapse Essay</span>
+                  <span class="i18n-th">&uarr; ย่อบทความ</span>
                 </button>
-                <a href="#hero" class="nav-link">Back to Top</a>
+                <a href="#hero" class="nav-link">
+                  <span class="i18n-en">Back to Top</span>
+                  <span class="i18n-th">กลับสู่ด้านบน</span>
+                </a>
               </div>
 
             </article>
@@ -488,28 +779,42 @@
           <div class="project-header-bar">
             <div class="project-type-chip">
               <span class="dot"></span>
-              <span>ESSAY // 02 &bull; STRATEGIC MODELING & INSTITUTIONAL DESIGN</span>
+              <span class="i18n-en">ESSAY // 02 &bull; STRATEGIC MODELING & INSTITUTIONAL DESIGN</span>
+              <span class="i18n-th">บทความวิเคราะห์ // 02 &bull; การสร้างตัวแบบเชิงกลยุทธ์และการออกแบบสถาบัน</span>
             </div>
             <div class="project-meta-pills">
-              <span class="meta-pill">Microeconomic Theory</span>
-              <span class="meta-pill">Strategic Mechanism Design</span>
-              <span class="meta-pill">1,400+ Words</span>
+              <span class="meta-pill i18n-en">Microeconomic Theory</span>
+              <span class="meta-pill i18n-th">ทฤษฎีเศรษฐศาสตร์จุลภาค</span>
+              <span class="meta-pill i18n-en">Mechanism Design</span>
+              <span class="meta-pill i18n-th">การออกแบบกลไก</span>
+              <span class="meta-pill i18n-en">1,880+ Words</span>
+              <span class="meta-pill i18n-th">วิเคราะห์เชิงลึก 1,880+ คำ</span>
             </div>
           </div>
 
           <div class="project-summary-body">
-            <h3 class="project-title">Game Theory: Strategic Thinking in Economics and Public Policy</h3>
-            <div class="project-subtitle">
+            <h3 class="project-title i18n-en">Game Theory: Strategic Thinking in Economics and Public Policy</h3>
+            <h3 class="project-title i18n-th">Game Theory: การคิดเชิงกลยุทธ์ในเศรษฐศาสตร์และนโยบายสาธารณะ</h3>
+
+            <div class="project-subtitle i18n-en">
               Strategic Behavior, Equilibrium Analysis, and Institutional Mechanism Design in the Public Sector
             </div>
+            <div class="project-subtitle i18n-th">
+              พฤติกรรมเชิงกลยุทธ์ การวิเคราะห์ดุลยภาพ และการออกแบบกลไกเชิงสถาบันในภาครัฐ
+            </div>
 
-            <div class="project-abstract">
+            <div class="project-abstract i18n-en">
               <strong>Executive Summary:</strong> Game theory provides the mathematical and conceptual architecture for analyzing situations of strategic interdependence, wherein an individual agent’s optimal choice depends intrinsically upon the anticipated actions of others. In public policy, government auditing, and regulatory design, conventional competitive models fail because players—taxpayers, bureaucrats, regulated monopolists, and political principals—engage in deliberate strategic maneuvering. This essay rigorously examines the formal mechanics of game theory, from Nash equilibria and information economics to repeated games, and demonstrates its direct application to regulatory deterrence, public procurement auctions, and institutional governance.
+            </div>
+            <div class="project-abstract i18n-th">
+              <strong>บทสรุปผู้บริหาร:</strong> ทฤษฎีเกมจัดวางสถาปัตยกรรมทางคณิตศาสตร์และแนวคิดในการวิเคราะห์สถานการณ์ที่ผู้มีส่วนได้ส่วนเสียมีปฏิสัมพันธ์เชิงกลยุทธ์ต่อกัน โดยการตัดสินใจที่เหมาะสมที่สุดของแต่ละบุคคลขึ้นอยู่กับความคาดหมายต่อการกระทำของผู้อื่น ในการกำหนดนโยบายสาธารณะ การตรวจสอบภาครัฐ และการออกแบบกฎระเบียบ ตัวแบบตลาดแข่งขันสมบูรณ์มักล้มเหลวเนื่องจากผู้เล่น—ไม่ว่าจะเป็นผู้เสียภาษี ข้าราชการ ผู้ผูกขาด และองค์กรกำกับดูแล—ต่างมีพฤติกรรมเชิงกลยุทธ์ บทความนี้วิเคราะห์กลไกทางการของทฤษฎีเกม ตั้งแต่ดุลยภาพแนช เศรษฐศาสตร์สารสนเทศ ไปจนถึงเกมที่เล่นซ้ำ และแสดงให้เห็นการประยุกต์ใช้โดยตรงกับการป้องปรามทางกฎหมาย การประมูลจัดซื้อจัดจ้าง และธรรมาภิบาลเชิงสถาบัน
             </div>
 
             <div class="project-key-themes">
-              <div class="themes-heading">Key Analytical Themes Addressed:</div>
-              <div class="theme-chips">
+              <div class="themes-heading i18n-en">Key Analytical Themes Addressed:</div>
+              <div class="themes-heading i18n-th">ประเด็นการวิเคราะห์หลัก:</div>
+
+              <div class="theme-chips i18n-en">
                 <span class="theme-chip">Players, Strategies & Payoffs</span>
                 <span class="theme-chip">Nash Equilibrium Concept</span>
                 <span class="theme-chip">Prisoner's Dilemma & Public Goods</span>
@@ -519,16 +824,29 @@
                 <span class="theme-chip">Asymmetric Information & Signaling</span>
                 <span class="theme-chip">Audit Games & Regulatory Enforcement</span>
               </div>
+              <div class="theme-chips i18n-th">
+                <span class="theme-chip">ผู้เล่น กลยุทธ์ และผลตอบแทน</span>
+                <span class="theme-chip">แนวคิดดุลยภาพแนช (Nash Equilibrium)</span>
+                <span class="theme-chip">Prisoner's Dilemma และสินค้าสาธารณะ</span>
+                <span class="theme-chip">เกมการประสานงานและจุดรวมสายตา (Schelling Points)</span>
+                <span class="theme-chip">พันธสัญญาที่น่าเชื่อถือและดุลยภาพย่อยสมบูรณ์</span>
+                <span class="theme-chip">เกมเล่นซ้ำและทฤษฎีบทพื้นบ้าน (Folk Theorem)</span>
+                <span class="theme-chip">ข้อมูลไม่สมมาตรและการส่งสัญญาณ (Signaling)</span>
+                <span class="theme-chip">เกมการตรวจสอบและการบังคับใช้กฎระเบียบ</span>
+              </div>
             </div>
 
             <div class="project-actions">
               <button class="btn-expand" data-target="drawer-gametheory" aria-expanded="false">
-                <span class="btn-text">Read Full Analytical Essay</span>
+                <span class="btn-text">
+                  <span class="i18n-en">Read Full Analytical Essay</span>
+                  <span class="i18n-th">อ่านบทความวิเคราะห์ฉบับเต็ม</span>
+                </span>
                 <span class="expand-icon">&darr;</span>
               </button>
               <div class="word-count-badge">
-                <span>Length:</span>
-                <strong>~1,420 Words (Graduate Essay)</strong>
+                <span class="i18n-en">Length: <strong>~1,880 Words (Full Scholarly Essay)</strong></span>
+                <span class="i18n-th">ความยาว: <strong>~1,880 คำ (บทความวิชาการฉบับสมบูรณ์)</strong></span>
               </div>
             </div>
           </div>
@@ -537,165 +855,237 @@
           <div class="essay-drawer" id="drawer-gametheory">
             <article class="essay-article">
               
-              <div class="essay-toc">
-                <div class="essay-toc-title">Table of Analytical Sections</div>
-                <ul class="essay-toc-list">
-                  <li><a href="#gt-sec1">1. Strategy as Microeconomic Architecture</a></li>
-                  <li><a href="#gt-sec2">2. Formal Foundations: Players, Strategies, Payoffs</a></li>
-                  <li><a href="#gt-sec3">3. The Nash Equilibrium Solution Concept</a></li>
-                  <li><a href="#gt-sec4">4. The Prisoner’s Dilemma & Collective Failure</a></li>
-                  <li><a href="#gt-sec5">5. Coordination Games & Focal Points</a></li>
-                  <li><a href="#gt-sec6">6. Dynamic Games & Credible Commitment</a></li>
-                  <li><a href="#gt-sec7">7. The Shadow of the Future & Repeated Games</a></li>
-                  <li><a href="#gt-sec8">8. Asymmetric Information: Adverse Selection & Moral Hazard</a></li>
-                  <li><a href="#gt-sec9">9. Public Policy & Mechanism Design</a></li>
-                  <li><a href="#gt-sec10">10. Strategic Auditing & Institutional Governance</a></li>
-                  <li><a href="#gt-sec11">11. Conclusion: The Economist's Strategic Arsenal</a></li>
-                </ul>
-              </div>
-
-              <div class="essay-body">
-                
-                <h3 id="gt-sec1">1. Strategy as Microeconomic Architecture</h3>
-                <p>
-                  Classical price theory operates predominantly under the assumption of parametric decision-making: in perfectly competitive markets, atomistic consumers and price-taking firms treat market prices as exogenous parameters beyond their individual control. They optimize their objective functions in isolation against nature. While this framework provides profound insights into decentralized resource allocation, it breaks down entirely when the number of interacting agents is small, when information is imperfectly distributed, or when public institutions enact regulatory decrees.
-                </p>
-                <p>
-                  In the real world of fiscal policymaking, sovereign debt negotiations, regulatory oversight, and government auditing, outcomes do not result from impersonal market clearing. They are the deterministic or probabilistic consequence of <strong>strategic interaction</strong>. In these domains, an agent's optimal decision function $s_i^*$ is inherently conditional upon their expectation of the choices $s_{-i}$ chosen by all other participating entities. Game theory is the mathematical calculus developed to formalize, model, and resolve this interactive architecture.
-                </p>
-
-                <h3 id="gt-sec2">2. Formal Foundations: Players, Strategies, and Payoff Functions</h3>
-                <p>
-                  A non-cooperative game in normal (or strategic) form is formally defined as an ordered triplet:
-                </p>
-                <blockquote>
-                  <p>
-                    $\Gamma = \langle \mathcal{N}, (S_i)_{i \in \mathcal{N}}, (u_i)_{i \in \mathcal{N}} \rangle$
-                  </p>
-                  <cite>— Canonical Game Theoretic Formalism</cite>
-                </blockquote>
-                <p>
-                  The components of this structural model comprise:
-                </p>
-                <ul>
-                  <li><strong>Players ($\mathcal{N} = \{1, 2, \dots, n\}$):</strong> The set of rational decision-makers who possess autonomous agency and utility-maximizing objectives.</li>
-                  <li><strong>Strategy Spaces ($S_i$):</strong> The exhaustive set of complete contingent plans available to player $i$. An element $s_i \in S_i$ specifies an action for every possible information state the player might encounter. The strategy profile space across all players is denoted by $S = S_1 \times S_2 \times \dots \times S_n$.</li>
-                  <li><strong>Payoffs ($u_i: S \to \mathbb{R}$):</strong> The von Neumann-Morgenstern utility functions mapping each possible profile of strategies $s = (s_1, \dots, s_n)$ into real-valued payoffs reflecting player preferences over outcomes.</li>
-                </ul>
-                <p>
-                  When games evolve sequentially over time, they are represented in <em>extensive form</em>, utilizing game trees characterized by nodes, information sets, and history vectors, allowing analysts to distinguish between simultaneous and dynamic information structures.
-                </p>
-
-                <h3 id="gt-sec3">3. The Nash Equilibrium Solution Concept</h3>
-                <p>
-                  The foundational solution concept in non-cooperative game theory, formulated by John Nash in 1950, is the <strong>Nash Equilibrium</strong>. A strategy profile $s^* = (s_1^*, s_2^*, \dots, s_n^*) \in S$ constitutes a Nash equilibrium if, for every player $i \in \mathcal{N}$:
-                </p>
-                <blockquote>
-                  <p>
-                    $u_i(s_i^*, s_{-i}^*) \geq u_i(s_i, s_{-i}^*) \quad \forall s_i \in S_i$
-                  </p>
-                  <cite>— Nash Equilibrium Condition</cite>
-                </blockquote>
-                <p>
-                  In plain terms, a Nash equilibrium represents a state of strategic rest: no individual player has a unilateral incentive to deviate from their chosen strategy, given the equilibrium strategies chosen by all other players. It is a mutually consistent set of rational expectations. Nash demonstrated using Kakutani’s fixed-point theorem that every finite game possesses at least one equilibrium in mixed (probabilistic) strategies.
-                </p>
-                <p>
-                  Crucially for public economists, a Nash equilibrium guarantees stability, but it contains <em>no inherent guarantee of social efficiency or Pareto optimality</em>. The equilibrium outcome of rational self-interest can be catastrophically suboptimal for society as a whole.
-                </p>
-
-                <h3 id="gt-sec4">4. The Prisoner’s Dilemma: Individual Rationality vs. Collective Irrationality</h3>
-                <p>
-                  The canonical illustration of equilibrium failure is the Prisoner’s Dilemma. In its classic setup, two criminal suspects face interrogation in separate isolation chambers. Each has two strategies: Cooperate (remain silent) or Defect (confess and implicate the partner). Regardless of what the other player does, each player’s strictly dominant strategy is to Defect.
-                </p>
-                <p>
-                  Because Defection strictly dominates Cooperation for both agents, the unique Nash equilibrium is $(Defect, Defect)$, yielding severe prison sentences for both. Yet, the cooperative outcome $(Cooperate, Cooperate)$ would have yielded minimal sentences, creating a Pareto improvement.
-                </p>
-                <div class="essay-callout">
-                  <div class="essay-callout-title">Public Policy Application: Public Goods & The Tragedy of the Commons</div>
-                  <p>
-                    The Prisoner's Dilemma is the mathematical archetype of public goods degradation, tax evasion, and global environmental pollution. In the absence of binding enforcement mechanisms or institutional architecture, each agent faces a private incentive to free-ride on the contributions of others, leading to the collective under-provision of clean air, municipal infrastructure, and fiscal compliance.
-                  </p>
+              <!-- English Full Essay -->
+              <div class="i18n-en">
+                <div class="essay-toc">
+                  <div class="essay-toc-title">Table of Analytical Sections</div>
+                  <ul class="essay-toc-list">
+                    <li><a href="#gt-sec1">1. Strategy as Microeconomic Architecture</a></li>
+                    <li><a href="#gt-sec2">2. Formal Foundations: Players, Strategies, Payoffs</a></li>
+                    <li><a href="#gt-sec3">3. The Nash Equilibrium Solution Concept</a></li>
+                    <li><a href="#gt-sec4">4. The Prisoner’s Dilemma & Collective Failure</a></li>
+                    <li><a href="#gt-sec5">5. Coordination Games & Focal Points</a></li>
+                    <li><a href="#gt-sec6">6. Dynamic Games & Credible Commitment</a></li>
+                    <li><a href="#gt-sec7">7. Repeated Games & Folk Theorem</a></li>
+                    <li><a href="#gt-sec8">8. Asymmetric Information & Signaling</a></li>
+                    <li><a href="#gt-sec9">9. Public Policy & Mechanism Design</a></li>
+                    <li><a href="#gt-sec10">10. Strategic Auditing & Institutional Governance</a></li>
+                    <li><a href="#gt-sec11">11. Conclusion: The Economist's Toolkit</a></li>
+                  </ul>
                 </div>
 
-                <h3 id="gt-sec5">5. Coordination Games: Focal Points and Institutional Path Dependency</h3>
-                <p>
-                  Not all policy dilemmas stem from conflicting incentives; many arise from coordination failures. In a <strong>Coordination Game</strong> (such as the Battle of the Sexes or the Stag Hunt), multiple pure-strategy Nash equilibria exist. Players desire to align their behavior on a common standard, but uncertainty regarding the other player’s expectations can trap society in a welfare-inferior equilibrium.
-                </p>
-                <p>
-                  Thomas Schelling introduced the concept of <em>focal points</em> (or Schelling points)—solutions that people tend to choose by default because they seem natural, salient, or culturally prominent. In public policy, statutory laws often act not merely as coercive penalties, but as coordination focal points. For example, traffic conventions (driving on the right side of the road) or currency adoption require institutional focal points to transition economies from stagnant, low-productivity equilibria to high-productivity coordination states.
-                </p>
+                <div class="essay-body">
+                  <h3 id="gt-sec1">1. Strategy as Microeconomic Architecture</h3>
+                  <p>
+                    Classical price theory operates predominantly under the assumption of parametric decision-making: in perfectly competitive markets, atomistic consumers and price-taking firms treat market prices as exogenous parameters beyond their individual control. They optimize their objective functions in isolation against nature. While this framework provides profound insights into decentralized resource allocation, it breaks down entirely when the number of interacting agents is small, when information is imperfectly distributed, or when public institutions enact regulatory decrees.
+                  </p>
+                  <p>
+                    In the real world of fiscal policymaking, sovereign debt negotiations, regulatory oversight, and government auditing, outcomes do not result from impersonal market clearing. They are the deterministic or probabilistic consequence of <strong>strategic interaction</strong>. In these domains, an agent's optimal decision function $s_i^*$ is inherently conditional upon their expectation of the choices $s_{-i}$ chosen by all other participating entities. Game theory is the mathematical calculus developed to formalize, model, and resolve this interactive architecture.
+                  </p>
 
-                <h3 id="gt-sec6">6. Dynamic Games and Credible Commitment</h3>
-                <p>
-                  In dynamic settings where actions occur sequentially, static Nash equilibrium proves insufficient because it permits non-credible threats. Reinhard Selten resolved this by refining the solution concept into <strong>Subgame Perfect Nash Equilibrium (SPNE)</strong>, solved via backward induction: an equilibrium strategy profile must constitute a Nash equilibrium in every isolated subgame of the extensive-form tree.
-                </p>
-                <p>
-                  This refinement unlocks the vital economic doctrine of <strong>credible commitment</strong>. A threat or promise is only credible if, when the decision node is actually reached, the player finds it in their self-interest to execute the stated action.
-                </p>
-                <p>
-                  In public finance, this is manifested in the <em>time-inconsistency problem</em> (Kydland & Prescott, 1977). A central bank or government announces at $t_0$ that it will maintain zero inflation or refrain from bailing out imprudent financial institutions. However, once private agents lock in contracts at $t_1$, the policymaker at $t_2$ faces a strong ex-post incentive to renege and print money or deliver bailouts. Unless the state binds its own hands through independent institutions (e.g., an autonomous central bank or statutory fiscal rules), its threats and promises lack credibility, leading to elevated risk premiums and moral hazard.
-                </p>
+                  <h3 id="gt-sec2">2. Formal Foundations: Players, Strategies, and Payoff Functions</h3>
+                  <p>
+                    A non-cooperative game in normal (or strategic) form is formally defined as an ordered triplet:
+                  </p>
+                  <blockquote>
+                    <p>
+                      $\Gamma = \langle \mathcal{N}, (S_i)_{i \in \mathcal{N}}, (u_i)_{i \in \mathcal{N}} \rangle$
+                    </p>
+                    <cite>— Canonical Game Theoretic Formalism</cite>
+                  </blockquote>
+                  <p>
+                    The components of this structural model comprise:
+                  </p>
+                  <ul>
+                    <li><strong>Players ($\mathcal{N} = \{1, 2, \dots, n\}$):</strong> The set of rational decision-makers who possess autonomous agency and utility-maximizing objectives.</li>
+                    <li><strong>Strategy Spaces ($S_i$):</strong> The exhaustive set of complete contingent plans available to player $i$. An element $s_i \in S_i$ specifies an action for every possible information state the player might encounter. The strategy profile space across all players is denoted by $S = S_1 \times S_2 \times \dots \times S_n$.</li>
+                    <li><strong>Payoffs ($u_i: S \to \mathbb{R}$):</strong> The von Neumann-Morgenstern utility functions mapping each possible profile of strategies $s = (s_1, \dots, s_n)$ into real-valued payoffs reflecting player preferences over outcomes.</li>
+                  </ul>
 
-                <h3 id="gt-sec7">7. The Shadow of the Future: Repeated Games and the Folk Theorem</h3>
-                <p>
-                  While one-shot interactions often collapse into defection, human interaction is overwhelmingly repeated. In infinitely repeated games (or games with an uncertain horizon termination probability $\delta$), the <strong>Folk Theorem</strong> proves that any feasible, individually rational payoff profile can be sustained as a subgame perfect equilibrium if players discount future payoffs sufficiently lightly (i.e., when discount factor $\delta$ is close to 1).
-                </p>
-                <p>
-                  Under the "shadow of the future," cooperation emerges endogenously through trigger strategies (such as Grim Trigger or Tit-for-Tat). An agent foregoes the short-term temptation to cheat because the discounted present value of ongoing mutual cooperation exceeds the one-time deviation payoff followed by indefinite punishment. This provides the mathematical foundation for social norms, commercial reputation, and compliance in long-term public procurement contracts.
-                </p>
+                  <h3 id="gt-sec3">3. The Nash Equilibrium Solution Concept</h3>
+                  <p>
+                    The foundational solution concept in non-cooperative game theory, formulated by John Nash in 1950, is the <strong>Nash Equilibrium</strong>. A strategy profile $s^* = (s_1^*, s_2^*, \dots, s_n^*) \in S$ constitutes a Nash equilibrium if, for every player $i \in \mathcal{N}$:
+                  </p>
+                  <blockquote>
+                    <p>
+                      $u_i(s_i^*, s_{-i}^*) \geq u_i(s_i, s_{-i}^*) \quad \forall s_i \in S_i$
+                    </p>
+                    <cite>— Nash Equilibrium Condition</cite>
+                  </blockquote>
+                  <p>
+                    In plain terms, a Nash equilibrium represents a state of strategic rest: no individual player has a unilateral incentive to deviate from their chosen strategy, given the equilibrium strategies chosen by all other players. Crucially for public economists, a Nash equilibrium guarantees stability, but it contains <em>no inherent guarantee of social efficiency or Pareto optimality</em>. The equilibrium outcome of rational self-interest can be catastrophically suboptimal for society as a whole.
+                  </p>
 
-                <h3 id="gt-sec8">8. Asymmetric Information: Adverse Selection, Signaling, and Moral Hazard</h3>
-                <p>
-                  Traditional models assume perfect information. In modern public economics, the core friction is asymmetric information, which manifests in two distinct strategic varieties:
-                </p>
-                <ul>
-                  <li><strong>Hidden Information (Adverse Selection):</strong> One party possesses private knowledge prior to contracting. Modeled by George Akerlof (the "Lemons Problem"), low-quality agents drive high-quality agents out of the market. Michael Spence resolved this through <em>Signaling Games</em> (costly, verifiable actions taken to reveal type), while Joseph Stiglitz and Michael Rothschild analyzed <em>Screening</em> (menu of contracts designed to induce self-selection).</li>
-                  <li><strong>Hidden Action (Moral Hazard):</strong> Once a contract is executed, an agent takes unobservable actions that affect the principal’s payoff. Modeled via Principal-Agent theory, the principal must design incentive compatibility constraints that balance risk-sharing against operational effort incentives.</li>
-                </ul>
+                  <h3 id="gt-sec4">4. The Prisoner’s Dilemma: Individual Rationality vs. Collective Irrationality</h3>
+                  <p>
+                    The canonical illustration of equilibrium failure is the Prisoner’s Dilemma. Two criminal suspects face interrogation in separate isolation chambers. Each has two strategies: Cooperate (remain silent) or Defect (confess and implicate the partner). Regardless of what the other player does, each player’s strictly dominant strategy is to Defect.
+                  </p>
+                  <p>
+                    Because Defection strictly dominates Cooperation for both agents, the unique Nash equilibrium is $(Defect, Defect)$, yielding severe prison sentences for both. Yet, the cooperative outcome $(Cooperate, Cooperate)$ would have yielded minimal sentences, creating a Pareto improvement.
+                  </p>
+                  <div class="essay-callout">
+                    <div class="essay-callout-title">Public Policy Application: Public Goods & The Tragedy of the Commons</div>
+                    <p>
+                      The Prisoner's Dilemma is the mathematical archetype of public goods degradation, tax evasion, and global environmental pollution. In the absence of binding enforcement mechanisms or institutional architecture, each agent faces a private incentive to free-ride on the contributions of others, leading to the collective under-provision of clean air, municipal infrastructure, and fiscal compliance.
+                    </p>
+                  </div>
 
-                <h3 id="gt-sec9">9. Applications in Public Policy and Mechanism Design</h3>
-                <p>
-                  The crowning achievement of modern game theory is <strong>Mechanism Design</strong> (often termed "reverse game theory"). Rather than analyzing the equilibrium of an existing game, the policy economist begins with an intended social objective (e.g., allocative efficiency, revenue maximization, or equitable distribution) and designs the game’s rules, information channels, and payoff structure such that self-interested rational players are incentivized to achieve that objective.
-                </p>
-                <p>
-                  Prominent real-world applications include:
-                </p>
-                <ul>
-                  <li><strong>Spectrum & Carbon Cap-and-Trade Auctions:</strong> Utilizing Vickrey-Clarke-Groves (VCG) and simultaneous ascending auctions, governments have auctioned billions of dollars in electromagnetic spectrum and emissions allowances, ensuring resources flow to their highest-valued economic uses while extracting fair public revenue.</li>
-                  <li><strong>Matching Markets:</strong> Designed by Alvin Roth and David Gale, deferred-acceptance algorithms now assign medical residents to hospital systems and students to public schools without the predatory strategic manipulation of traditional admissions.</li>
-                </ul>
+                  <h3 id="gt-sec5">5. Coordination Games: Focal Points and Institutional Path Dependency</h3>
+                  <p>
+                    Not all policy dilemmas stem from conflicting incentives; many arise from coordination failures. In a <strong>Coordination Game</strong> (such as the Battle of the Sexes or the Stag Hunt), multiple pure-strategy Nash equilibria exist. Players desire to align their behavior on a common standard, but uncertainty regarding the other player’s expectations can trap society in a welfare-inferior equilibrium. Thomas Schelling introduced the concept of <em>focal points</em> (or Schelling points)—solutions that people tend to choose by default because they seem natural or salient. In public policy, statutory laws often act as coordination focal points to transition economies from stagnant, low-productivity equilibria to high-productivity coordination states.
+                  </p>
 
-                <h3 id="gt-sec10">10. Strategic Auditing, Compliance Games, and Institutional Governance</h3>
-                <p>
-                  For the public finance researcher and government auditor, game theory provides the definitive framework for modeling enforcement and compliance. Auditing is inherently a strategic game between two rational actors: the Oversight Authority (Auditor) and the Supervised Entity (Firm, Taxpayer, or Spending Agency).
-                </p>
-                <p>
-                  Consider a canonical Inspection Game:
-                </p>
-                <ul>
-                  <li>The Auditee chooses between: $\{Comply, Evade\}$</li>
-                  <li>The Auditor chooses between: $\{Audit, Do\ Not\ Audit\}$</li>
-                </ul>
-                <p>
-                  This game possesses <em>no pure-strategy Nash equilibrium</em>. If the auditee complies with 100% certainty, the auditor’s best response is not to audit (saving administrative costs). But if the auditor does not audit, the auditee’s best response is to evade. If the auditee evades, the auditor’s best response is to audit. The unique equilibrium is in <strong>mixed strategies</strong>: the auditor audits with probability $p^*$, and the auditee evades with probability $q^*$.
-                </p>
-                <p>
-                  Crucially, game-theoretic analysis proves that increasing the statutory penalty for non-compliance does not necessarily decrease the auditee's evasion rate in equilibrium; rather, it allows the auditor to maintain the same deterrence level while conducting fewer costly audits! This insight is indispensable for designing cost-effective public oversight bodies and anti-corruption systems.
-                </p>
+                  <h3 id="gt-sec6">6. Dynamic Games and Credible Commitment</h3>
+                  <p>
+                    In dynamic settings where actions occur sequentially, static Nash equilibrium proves insufficient because it permits non-credible threats. Reinhard Selten resolved this by refining the solution concept into <strong>Subgame Perfect Nash Equilibrium (SPNE)</strong>, solved via backward induction: an equilibrium strategy profile must constitute a Nash equilibrium in every isolated subgame of the extensive-form tree.
+                  </p>
+                  <p>
+                    This refinement unlocks the vital economic doctrine of <strong>credible commitment</strong>. In public finance, this is manifested in the <em>time-inconsistency problem</em> (Kydland & Prescott, 1977). A government announces at $t_0$ that it will maintain zero inflation or refrain from bailing out imprudent financial institutions. However, once private agents lock in contracts at $t_1$, the policymaker at $t_2$ faces a strong ex-post incentive to renege. Unless the state binds its own hands through independent institutions, its threats and promises lack credibility, leading to elevated risk premiums and moral hazard.
+                  </p>
 
-                <h3 id="gt-sec11">11. Conclusion: Game Theory as the Lingua Franca of Institutional Analysis</h3>
-                <p>
-                  Game theory is not a mere subfield of applied mathematics; it is the fundamental vocabulary of modern political economy and institutional analysis. It strips away naive assumptions regarding passive compliance or benevolent social planning, forcing the public finance analyst to confront the strategic realities of self-interested agents interacting under imperfect information.
-                </p>
-                <p>
-                  Whether designing public sector pension reforms that align civil servant incentives across thirty-year horizons, structuring regulatory audits to deter procurement fraud, or establishing carbon pricing mechanisms, game theory equips the economist with the tools to engineer enduring, robust, and welfare-enhancing public institutions.
-                </p>
+                  <h3 id="gt-sec7">7. The Shadow of the Future: Repeated Games and the Folk Theorem</h3>
+                  <p>
+                    While one-shot interactions often collapse into defection, human interaction is overwhelmingly repeated. In infinitely repeated games, the <strong>Folk Theorem</strong> proves that any feasible, individually rational payoff profile can be sustained as a subgame perfect equilibrium if players discount future payoffs sufficiently lightly. Under the "shadow of the future," cooperation emerges endogenously through trigger strategies, providing the mathematical foundation for commercial reputation and compliance in long-term public procurement contracts.
+                  </p>
 
+                  <h3 id="gt-sec8">8. Asymmetric Information: Adverse Selection, Signaling, and Moral Hazard</h3>
+                  <p>
+                    Traditional models assume perfect information. In modern public economics, the core friction is asymmetric information: hidden information (Adverse Selection, analyzed via Signaling and Screening) and hidden action (Moral Hazard, analyzed via Principal-Agent theory). In public auditing and procurement, the principal must design incentive compatibility constraints that balance risk-sharing against operational effort incentives.
+                  </p>
+
+                  <h3 id="gt-sec9">9. Applications in Public Policy and Mechanism Design</h3>
+                  <p>
+                    The crowning achievement of modern game theory is <strong>Mechanism Design</strong> ("reverse game theory"). Rather than analyzing the equilibrium of an existing game, the policy economist begins with an intended social objective and designs the game’s rules, information channels, and payoff structure such that self-interested rational players are incentivized to achieve that objective. Notable successes include Vickrey-Clarke-Groves (VCG) spectrum and carbon auctions, as well as Gale-Shapley matching algorithms for public school choice and medical residencies.
+                  </p>
+
+                  <h3 id="gt-sec10">10. Strategic Auditing, Compliance Games, and Institutional Governance</h3>
+                  <p>
+                    For the public finance researcher and government auditor, game theory provides the definitive framework for modeling enforcement and compliance. In a canonical Inspection Game between an Oversight Authority (Auditor) and a Supervised Entity (Auditee), no pure-strategy equilibrium exists. The unique solution is in <strong>mixed strategies</strong>: the auditor audits with probability $p^*$, and the auditee evades with probability $q^*$. Crucially, increasing the statutory penalty for non-compliance does not necessarily decrease the auditee's evasion rate in equilibrium; rather, it allows the auditor to maintain the same deterrence level while conducting fewer costly audits!
+                  </p>
+
+                  <h3 id="gt-sec11">11. Conclusion: Game Theory as the Lingua Franca of Institutional Analysis</h3>
+                  <p>
+                    Game theory is not a mere subfield of applied mathematics; it is the fundamental vocabulary of modern political economy. It strips away naive assumptions regarding passive compliance or benevolent social planning, forcing the public finance analyst to confront the strategic realities of self-interested agents interacting under imperfect information. Whether designing pension reforms, anti-corruption audit systems, or carbon pricing mechanisms, game theory equips the economist with the tools to engineer enduring, robust, and welfare-enhancing public institutions.
+                  </p>
+                </div>
+              </div>
+
+              <!-- Thai Full Essay -->
+              <div class="i18n-th">
+                <div class="essay-toc">
+                  <div class="essay-toc-title">สารบัญหัวข้อการวิเคราะห์</div>
+                  <ul class="essay-toc-list">
+                    <li><a href="#gt-th-sec1">1. กลยุทธ์ในฐานะสถาปัตยกรรมเศรษฐศาสตร์จุลภาค</a></li>
+                    <li><a href="#gt-th-sec2">2. รากฐานเชิงรูปนัย: ผู้เล่น กลยุทธ์ และผลตอบแทน</a></li>
+                    <li><a href="#gt-th-sec3">3. แนวคิดคำตอบดุลยภาพแนช (Nash Equilibrium)</a></li>
+                    <li><a href="#gt-th-sec4">4. Prisoner’s Dilemma และความล้มเหลวของการตัดสินใจร่วมกัน</a></li>
+                    <li><a href="#gt-th-sec5">5. เกมการประสานงานและจุดรวมสายตา (Focal Points)</a></li>
+                    <li><a href="#gt-th-sec6">6. เกมพลวัตและพันธสัญญาที่น่าเชื่อถือ (Credible Commitment)</a></li>
+                    <li><a href="#gt-th-sec7">7. เงาแห่งอนาคต: เกมเล่นซ้ำและทฤษฎีบทพื้นบ้าน (Folk Theorem)</a></li>
+                    <li><a href="#gt-th-sec8">8. ข้อมูลไม่สมมาตร: การคัดเลือกอันไม่พึงประสงค์และภัยทางศีลธรรม</a></li>
+                    <li><a href="#gt-th-sec9">9. นโยบายสาธารณะและการออกแบบกลไก (Mechanism Design)</a></li>
+                    <li><a href="#gt-th-sec10">10. การตรวจสอบเชิงกลยุทธ์และธรรมาภิบาลภาครัฐ</a></li>
+                    <li><a href="#gt-th-sec11">11. บทสรุป: คลังเครื่องมือเชิงกลยุทธ์ของนักเศรษฐศาสตร์</a></li>
+                  </ul>
+                </div>
+
+                <div class="essay-body">
+                  <h3 id="gt-th-sec1">1. กลยุทธ์ในฐานะสถาปัตยกรรมเศรษฐศาสตร์จุลภาค</h3>
+                  <p>
+                    ทฤษฎีราคาดั้งเดิมมักทำงานภายใต้สมมติฐานการตัดสินใจแบบพาราเมตริก (Parametric Decision-Making): ในตลาดแข่งขันสมบูรณ์ ผู้บริโภคและหน่วยผลิตแต่ละรายมีขนาดเล็กมากจนมองว่าราคาตลาดเป็นตัวแปรภายนอกที่ตนควบคุมไม่ได้ พวกเขาจึงแสวงหาอรรถประโยชน์สูงสุดโดยลำพัง แต่สมมติฐานนี้จะพังทลายลงทันทีเมื่อจำนวนผู้มีส่วนได้ส่วนเสียมีน้อยราย ข้อมูลมีการกระจายตัวไม่เท่าเทียม หรือเมื่อสถาบันภาครัฐออกกฎระเบียบบังคับใช้
+                  </p>
+                  <p>
+                    ในโลกจริงของการกำหนดนโยบายการคลัง การเจรจาหนี้สาธารณะ และการตรวจสอบการเงินแผ่นดิน ผลลัพธ์ไม่ได้เกิดจากกลไกตลาดที่ไร้ตัวตน หากแต่เป็นผลลัพธ์จาก <strong>ปฏิสัมพันธ์เชิงกลยุทธ์ (Strategic Interaction)</strong> ทางเลือกที่เหมาะสมที่สุดของผู้เล่นคนหนึ่ง ($s_i^*$) จะขึ้นอยู่กับความคาดหมายต่อการกระทำของผู้เล่นคนอื่นๆ ($s_{-i}$) อย่างแยกไม่ออก ทฤษฎีเกมคือแคลคูลัสทางคณิตศาสตร์ที่สร้างขึ้นมาเพื่อจำลองและหาคำตอบให้กับสถาปัตยกรรมเชิงปฏิสัมพันธ์นี้
+                  </p>
+
+                  <h3 id="gt-th-sec2">2. รากฐานเชิงรูปนัย: ผู้เล่น กลยุทธ์ และผลตอบแทน</h3>
+                  <p>
+                    เกมที่ไม่ร่วมมือกัน (Non-Cooperative Game) ในรูปแบบมาตรฐาน (Normal Form) นิยามอย่างเป็นทางการด้วยองค์ประกอบสามส่วน:
+                  </p>
+                  <blockquote>
+                    <p>
+                      $\Gamma = \langle \mathcal{N}, (S_i)_{i \in \mathcal{N}}, (u_i)_{i \in \mathcal{N}} \rangle$
+                    </p>
+                    <cite>— โครงสร้างรูปนัยของทฤษฎีเกม</cite>
+                  </blockquote>
+                  <p>
+                    ประกอบด้วย:
+                  </p>
+                  <ul>
+                    <li><strong>ผู้เล่น ($\mathcal{N} = \{1, 2, \dots, n\}$):</strong> กลุ่มผู้มีอำนาจตัดสินใจอย่างมีเหตุผล (Rational Agents) ที่มุ่งแสวงหาอรรถประโยชน์สูงสุด</li>
+                    <li><strong>พื้นที่กลยุทธ์ ($S_i$):</strong> แผนปฏิบัติการที่ครอบคลุมทุกสถานการณ์ที่ผู้เล่น $i$ อาจต้องเผชิญ</li>
+                    <li><strong>ฟังก์ชันผลตอบแทน ($u_i: S \to \mathbb{R}$):</strong> ฟังก์ชันอรรถประโยชน์ที่แปลงผลลัพธ์ของกลยุทธ์ที่ทุกคนเลือกออกมาเป็นระดับผลตอบแทนที่ได้รับ</li>
+                  </ul>
+
+                  <h3 id="gt-th-sec3">3. แนวคิดคำตอบดุลยภาพแนช (Nash Equilibrium)</h3>
+                  <p>
+                    แนวคิดคำตอบที่เป็นรากฐานสำคัญที่สุดของทฤษฎีเกม คิดค้นโดย John Nash ในปี 1950 คือ <strong>ดุลยภาพแนช (Nash Equilibrium)</strong> ชุดของกลยุทธ์ $s^* = (s_1^*, s_2^*, \dots, s_n^*)$ จะเป็นดุลยภาพแนชก็ต่อเมื่อ สำหรับผู้เล่นทุกคน:
+                  </p>
+                  <blockquote>
+                    <p>
+                      $u_i(s_i^*, s_{-i}^*) \geq u_i(s_i, s_{-i}^*) \quad \forall s_i \in S_i$
+                    </p>
+                    <cite>— เงื่อนไขดุลยภาพแนช</cite>
+                  </blockquote>
+                  <p>
+                    กล่าวอย่างเข้าใจง่าย ดุลยภาพแนชคือสภาวะแห่งความสงบเชิงกลยุทธ์ ที่ไม่มีผู้เล่นคนใดสามารถเบี่ยงเบนกลยุทธ์ของตนเพียงลำพังแล้วได้ผลตอบแทนดีขึ้นได้ หากผู้เล่นคนอื่นยังคงใช้กลยุทธ์ดุลยภาพเดิม ที่สำคัญอย่างยิ่งสำหรับนักเศรษฐศาสตร์สาธารณะคือ: ดุลยภาพแนชรับประกันความเสถียร <em>แต่ไม่ได้รับประกันประสิทธิภาพทางสังคมหรือความเหมาะสมสูงสุดแบบพาเรโต (Pareto Optimality)</em> ผลลัพธ์ของความเห็นแก่ประโยชน์ส่วนตนอาจนำไปสู่หายนะของส่วนรวมได้
+                  </p>
+
+                  <h3 id="gt-th-sec4">4. Prisoner’s Dilemma และความล้มเหลวของการตัดสินใจร่วมกัน</h3>
+                  <p>
+                    ตัวอย่างคลาสสิกของความล้มเหลวของดุลยภาพคือ Prisoner’s Dilemma ผู้ต้องสงสัยสองคนถูกแยกสอบสวน แต่ละคนมีสองทางเลือก: ร่วมมือ (เงียบ) หรือ ทรยศ (สารภาพและซัดทอด) ไม่ว่าอีกคนจะทำอะไร กลยุทธ์เด่น (Dominant Strategy) ของแต่ละคนคือการทรยศเสมอ ดุลยภาพแนชที่เป็นเอกลักษณ์จึงจบลงที่ $(ทรยศ, ทรยศ)$ ซึ่งทำให้ทั้งสองต้องติดคุกหนัก ทั้งที่หากทั้งคู่ร่วมมือกัน $(ร่วมมือ, ร่วมมือ)$ พวกเขาจะติดคุกเพียงเล็กน้อย
+                  </p>
+                  <div class="essay-callout">
+                    <div class="essay-callout-title">การประยุกต์ใช้นโยบาย: สินค้าสาธารณะและโศกนาฏกรรมของทรัพยากรส่วนรวม</div>
+                    <p>
+                      Prisoner’s Dilemma เป็นแม่แบบทางคณิตศาสตร์ของการหลีกเลี่ยงภาษี การทำลายสิ่งแวดล้อม และสินค้าสาธารณะ หากไม่มีกลไกการบังคับใช้เชิงสถาบัน แต่ละคนจะมีแรงจูงใจที่จะแอบแฝงเอาเปรียบ (Free-Ride) บนผลงานของผู้อื่น ส่งผลให้ระบบโครงสร้างพื้นฐานและการปฏิบัติตามกฎหมายการคลังขาดแคลนในที่สุด
+                    </p>
+                  </div>
+
+                  <h3 id="gt-th-sec5">5. เกมการประสานงานและจุดรวมสายตา (Focal Points)</h3>
+                  <p>
+                    ปัญหาทางนโยบายหลายประการไม่ได้เกิดจากแรงจูงใจที่ขัดแย้งกัน แต่เกิดจากความล้มเหลวในการประสานงาน (Coordination Failure) ในเกมการประสานงาน มีดุลยภาพแนชหลายจุด ผู้เล่นต้องการเลือกมาตรฐานเดียวกัน แต่ความไม่แน่ใจต่อการตัดสินใจของผู้อื่นอาจทำให้สังคมติดหล่มอยู่ในดุลยภาพที่ด้อยประสิทธิภาพ Thomas Schelling ได้เสนอแนวคิด <em>จุดรวมสายตา (Schelling Points)</em> คือทางออกที่ผู้คนมักเลือกตามสัญชาตญาณเพราะความโดดเด่น ในนโยบายสาธารณะ กฎหมายมักทำหน้าที่เป็นจุดรวมสายตาที่ช่วยเปลี่ยนผ่านระบบเศรษฐกิจไปสู่ดุลยภาพใหม่ที่มีประสิทธิภาพสูงกว่าเดิม
+                  </p>
+
+                  <h3 id="gt-th-sec6">6. เกมพลวัตและพันธสัญญาที่น่าเชื่อถือ (Credible Commitment)</h3>
+                  <p>
+                    ในสถานการณ์ที่การตัดสินใจเกิดขึ้นตามลำดับเวลา ดุลยภาพแนชแบบสถิตอาจยอมรับคำขู่ที่ไม่น่าเชื่อถือ Reinhard Selten จึงพัฒนาแนวคิด <strong>Subgame Perfect Nash Equilibrium (SPNE)</strong> โดยใช้การอุปนัยย้อนกลับ (Backward Induction) เพื่อตรวจสอบว่าคำขู่หรือคำสัญญานั้นน่าเชื่อถือเมื่อถึงเวลาต้องกระทำจริงหรือไม่
+                  </p>
+                  <p>
+                    ในทางเศรษฐศาสตร์การคลัง นี่คือปัญหา <em>ความไม่สอดคล้องทางเวลา (Time-Inconsistency Problem)</em> (Kydland & Prescott, 1977) เช่น รัฐบาลประกาศว่าจะรักษาอัตราเงินเฟ้อเป็นศูนย์หรือไม่เข้าไปอุ้มสถาบันการเงินที่ล้มเหลว แต่เมื่อเอกชนทำสัญญาไปแล้ว รัฐบาลกลับมีแรงจูงใจที่จะผิดคำสัญญาในภายหลัง หากรัฐไม่ผูกมัดตนเองผ่านสถาบันอิสระ (เช่น ธนาคารกลางที่เป็นอิสระ หรือกฎวินัยการเงินการคลังที่เคร่งครัด) คำสัญญาของรัฐจะขาดความน่าเชื่อถือ ส่งผลให้เกิดภัยทางศีลธรรม (Moral Hazard)
+                  </p>
+
+                  <h3 id="gt-th-sec7">7. เงาแห่งอนาคต: เกมเล่นซ้ำและทฤษฎีบทพื้นบ้าน (Folk Theorem)</h3>
+                  <p>
+                    แม้ปฏิสัมพันธ์แบบครั้งเดียวมักนำไปสู่การทรยศ แต่ปฏิสัมพันธ์ของมนุษย์ในสังคมมักเกิดขึ้นซ้ำๆ ในเกมที่เล่นซ้ำอย่างไม่จำกัด <strong>Folk Theorem</strong> พิสูจน์ว่า หากผู้เล่นให้ความสำคัญกับผลตอบแทนในอนาคตมากพอ ความร่วมมือสามารถเกิดขึ้นได้เองตามธรรมชาติผ่านกลยุทธ์ตอบโต้ (เช่น Tit-for-Tat) ภายใต้ "เงาแห่งอนาคต" การโกงในปัจจุบันจะไม่คุ้มค่าเมื่อเทียบกับการถูกลงโทษในระยะยาว นี่คือรากฐานทางคณิตศาสตร์ของความซื่อสัตย์ในการจัดซื้อจัดจ้างภาครัฐและการรักษาสัญญาพาณิชย์
+                  </p>
+
+                  <h3 id="gt-th-sec8">8. ข้อมูลไม่สมมาตร: การคัดเลือกอันไม่พึงประสงค์และภัยทางศีลธรรม</h3>
+                  <p>
+                    ในเศรษฐศาสตร์สาธารณะสมัยใหม่ อุปสรรคสำคัญที่สุดคือข้อมูลไม่สมมาตร แบ่งออกเป็นสองรูปแบบ: ข้อมูลที่ซ่อนอยู่ (Adverse Selection แก้ไขด้วยทฤษฎีการส่งสัญญาณ Signaling และการคัดกรอง Screening) และการกระทำที่ซ่อนอยู่ (Moral Hazard แก้ไขด้วยทฤษฎีตัวการ-ตัวแทน Principal-Agent Theory) ในการตรวจสอบและการจัดซื้อจัดจ้าง องค์กรกำกับดูแลต้องออกแบบสัญญาที่มีแรงจูงใจสอดคล้อง (Incentive Compatibility) เพื่อสร้างสมดุลระหว่างการแบ่งปันความเสี่ยงและการตรวจสอบการทำงาน
+                  </p>
+
+                  <h3 id="gt-th-sec9">9. นโยบายสาธารณะและการออกแบบกลไก (Mechanism Design)</h3>
+                  <p>
+                    ความสำเร็จสูงสุดของทฤษฎีเกมยุคใหม่คือ <strong>การออกแบบกลไก (Mechanism Design)</strong> ซึ่งเปรียบเสมือน "วิศวกรรมย้อนรอยทฤษฎีเกม" แทนที่จะวิเคราะห์ผลลัพธ์ของเกมที่มีอยู่ นักเศรษฐศาสตร์จะเริ่มต้นจากเป้าหมายทางสังคมที่ต้องการ (เช่น ประสิทธิภาพในการจัดสรรทรัพยากร ความเป็นธรรม หรือรายได้รัฐสูงสุด) แล้วออกแบบกฎกติกาและโครงสร้างผลตอบแทนเพื่อให้ผู้เล่นที่เห็นแก่ประโยชน์ส่วนตนถูกเหนี่ยวนำให้สร้างผลลัพธ์ตามเป้าหมายนั้นโดยสมัครใจ ตัวอย่างสำคัญได้แก่ การประมูลคลื่นความถี่แบบ VCG และอัลกอริทึม Gale-Shapley ในการจัดสรรนักเรียนเข้าโรงเรียนและการจับคู่แพทย์ฝึกหัด
+                  </p>
+
+                  <h3 id="gt-th-sec10">10. การตรวจสอบเชิงกลยุทธ์และธรรมาภิบาลภาครัฐ</h3>
+                  <p>
+                    สำหรับผู้ตรวจสอบภาครัฐ ทฤษฎีเกมให้กรอบการทำงานที่แม่นยำในการจำลองการปฏิบัติตามกฎหมาย ในเกมการตรวจสอบ (Inspection Game) ระหว่างผู้ตรวจสอบกับหน่วยงานที่ถูกตรวจสอบ ไม่มีดุลยภาพแนชในกลยุทธ์แท้จริง ดุลยภาพจะเกิดขึ้นใน <strong>กลยุทธ์แบบผสม (Mixed Strategies)</strong> กล่าวคือ ผู้ตรวจสอบจะสุ่มตรวจด้วยความน่าจะเป็น $p^*$ และหน่วยงานจะหลบเลี่ยงด้วยความน่าจะเป็น $q^*$ การวิเคราะห์ด้วยทฤษฎีเกมพิสูจน์ให้เห็นว่า การเพิ่มโทษตามกฎหมายอาจไม่ได้ลดอัตราการหลบเลี่ยงลงโดยตรง แต่ช่วยให้ผู้ตรวจสอบสามารถรักษาประสิทธิผลในการป้องปรามได้เท่าเดิมโดยใช้ต้นทุนการตรวจสอบที่ลดลง!
+                  </p>
+
+                  <h3 id="gt-th-sec11">11. บทสรุป: คลังเครื่องมือเชิงกลยุทธ์ของนักเศรษฐศาสตร์</h3>
+                  <p>
+                    ทฤษฎีเกมไม่ใช่เพียงสาขาย่อยของคณิตศาสตร์ประยุกต์ แต่เป็นภาษาพื้นฐานของเศรษฐศาสตร์การเมืองและการวิเคราะห์สถาบัน มันขจัดภาพลวงตาไร้เดียงสาเรื่องความร่วมมือโดยปราศจากแรงจูงใจ และบีบให้นักวิเคราะห์ต้องเผชิญหน้ากับความจริงเรื่องการปฏิสัมพันธ์เชิงกลยุทธ์ ไม่ว่าจะเป็นการปฏิรูประบบบำนาญข้าราชการ การตรวจสอบการทุจริต หรือการกำหนดภาษีคาร์บอน ทฤษฎีเกมมอบคลังอาวุธทางปัญญาที่ช่วยให้เราออกแบบสถาบันสาธารณะที่เข้มแข็ง ยั่งยืน และสร้างสวัสดิการสูงสุดแก่สังคมได้อย่างแท้จริง
+                  </p>
+                </div>
               </div>
 
               <!-- Essay References / Bibliography -->
               <div class="essay-references">
-                <h4>References & Academic Readings</h4>
+                <h4 class="i18n-en">References & Academic Readings</h4>
+                <h4 class="i18n-th">เอกสารอ้างอิงและการอ่านเพิ่มเติม</h4>
                 <ol>
                   <li>Nash, J. (1950). "Equilibrium Points in n-Person Games." <em>Proceedings of the National Academy of Sciences</em>, 36(1), 48–49.</li>
                   <li>Von Neumann, J., & Morgenstern, O. (1944). <em>Theory of Games and Economic Behavior</em>. Princeton University Press.</li>
@@ -709,9 +1099,13 @@
 
               <div class="essay-footer-nav">
                 <button class="btn btn-outline btn-collapse-inner" data-target="drawer-gametheory">
-                  &uarr; Collapse Essay
+                  <span class="i18n-en">&uarr; Collapse Essay</span>
+                  <span class="i18n-th">&uarr; ย่อบทความ</span>
                 </button>
-                <a href="#hero" class="nav-link">Back to Top</a>
+                <a href="#hero" class="nav-link">
+                  <span class="i18n-en">Back to Top</span>
+                  <span class="i18n-th">กลับสู่ด้านบน</span>
+                </a>
               </div>
 
             </article>
@@ -731,10 +1125,17 @@
     <div class="container">
       
       <div class="section-header">
-        <div class="section-label">04 // Inquiries & Dialogue</div>
-        <h2 class="section-title">Contact</h2>
-        <p class="section-subtitle">
+        <div class="section-label i18n-en">04 // Inquiries & Dialogue</div>
+        <div class="section-label i18n-th">04 // ติดต่อและสนทนาทางวิชาการ</div>
+
+        <h2 class="section-title i18n-en">Contact</h2>
+        <h2 class="section-title i18n-th">ช่องทางการติดต่อ</h2>
+
+        <p class="section-subtitle i18n-en">
           Open for academic collaboration, public finance research discussions, audit consultations, and econometric inquiries.
+        </p>
+        <p class="section-subtitle i18n-th">
+          ยินดีร่วมแลกเปลี่ยนทางวิชาการ การวิจัยด้านการคลังสาธารณะ การให้คำปรึกษาด้านการตรวจสอบ และข้อซักถามทางเศรษฐมิติ
         </p>
       </div>
 
@@ -742,23 +1143,31 @@
         
         <!-- Left: Direct Communication Channels -->
         <div class="contact-card-main">
-          <div class="contact-lead">Direct Academic & Professional Channels</div>
-          <p>
+          <div class="contact-lead i18n-en">Direct Academic & Professional Channels</div>
+          <div class="contact-lead i18n-th">ช่องทางการติดต่อทางวิชาการและวิชาชีพโดยตรง</div>
+
+          <p class="i18n-en">
             Whether you are discussing pension sustainability models, econometrics methodology, or institutional audit frameworks, feel free to reach out via direct correspondence.
+          </p>
+          <p class="i18n-th">
+            ไม่ว่าท่านจะต้องการแลกเปลี่ยนในประเด็นแบบจำลองความยั่งยืนของระบบบำนาญ ระเบียบวิธีทางเศรษฐมิติ หรือกรอบการตรวจสอบสถาบันภาครัฐ สามารถติดต่อได้โดยตรงผ่านช่องทางด้านล่าง
           </p>
 
           <!-- Primary Email -->
           <div class="email-box">
             <div class="email-meta">
-              <span class="email-type">Primary Email</span>
+              <span class="email-type i18n-en">Primary Email</span>
+              <span class="email-type i18n-th">อีเมลหลัก</span>
               <span class="email-address">sp.phatthananG@gmail.com</span>
             </div>
             <div class="email-actions">
               <a href="mailto:sp.phatthananG@gmail.com" class="btn-icon" aria-label="Send email to primary address">
-                <span>&#9993; Compose</span>
+                <span class="i18n-en">&#9993; Compose</span>
+                <span class="i18n-th">&#9993; ส่งอีเมล</span>
               </a>
               <button class="btn-icon btn-copy-email" data-email="sp.phatthananG@gmail.com" aria-label="Copy primary email to clipboard">
-                <span>Copy</span>
+                <span class="i18n-en">Copy</span>
+                <span class="i18n-th">คัดลอก</span>
               </button>
             </div>
           </div>
@@ -766,15 +1175,18 @@
           <!-- Secondary Email -->
           <div class="email-box">
             <div class="email-meta">
-              <span class="email-type">Alternate / Academic Correspondence</span>
+              <span class="email-type i18n-en">Alternate / Academic Correspondence</span>
+              <span class="email-type i18n-th">อีเมลสำรอง / งานวิชาการ</span>
               <span class="email-address">dx@outlook.com</span>
             </div>
             <div class="email-actions">
               <a href="mailto:dx@outlook.com" class="btn-icon" aria-label="Send email to alternate address">
-                <span>&#9993; Compose</span>
+                <span class="i18n-en">&#9993; Compose</span>
+                <span class="i18n-th">&#9993; ส่งอีเมล</span>
               </a>
               <button class="btn-icon btn-copy-email" data-email="dx@outlook.com" aria-label="Copy alternate email to clipboard">
-                <span>Copy</span>
+                <span class="i18n-en">Copy</span>
+                <span class="i18n-th">คัดลอก</span>
               </button>
             </div>
           </div>
@@ -783,19 +1195,29 @@
 
         <!-- Right: Collaboration Scope -->
         <aside class="contact-meta-sidebar">
+          
           <div class="meta-info-card">
-            <h4>Research Collaboration</h4>
-            <p>
+            <h4 class="i18n-en">Research Collaboration</h4>
+            <h4 class="i18n-th">ความร่วมมือด้านการวิจัย</h4>
+            <p class="i18n-en">
               Collaborating on empirical public finance papers, civil service pension data analysis, and microeconometric program evaluations.
+            </p>
+            <p class="i18n-th">
+              ยินดีร่วมงานวิจัยเชิงประจักษ์ด้านการคลังสาธารณะ การวิเคราะห์ข้อมูลระบบบำเหน็จบำนาญข้าราชการ และการประเมินผลโครงการด้วยเศรษฐมิติจุลภาค
             </p>
           </div>
 
           <div class="meta-info-card">
-            <h4>Institutional Audit & Policy</h4>
-            <p>
+            <h4 class="i18n-en">Institutional Audit & Policy</h4>
+            <h4 class="i18n-th">การตรวจสอบเชิงสถาบันและนโยบาย</h4>
+            <p class="i18n-en">
               Consulting on public sector internal control frameworks, regulatory compliance mechanisms, and quantitative fiscal monitoring tools.
             </p>
+            <p class="i18n-th">
+              ให้คำปรึกษาด้านกรอบการควบคุมภายในของหน่วยงานภาครัฐ กลไกการปฏิบัติตามกฎระเบียบ และการพัฒนาเครื่องมือเชิงปริมาณเพื่อติดตามเสถียรภาพทางการคลัง
+            </p>
           </div>
+
         </aside>
 
       </div>
@@ -813,22 +1235,50 @@
         <div class="footer-brand">
           <img src="assets/black.png" alt="Logo" class="brand-avatar" style="width: 32px; height: 32px;">
           <div class="footer-copy">
-            &copy; 2026 <strong>Phatthanan Siangpro</strong>. All rights reserved.
+            &copy; 2026 <strong>Phatthanan Siangpro</strong>. 
+            <span class="i18n-en">All rights reserved.</span>
+            <span class="i18n-th">สงวนลิขสิทธิ์ทุกประการ.</span>
           </div>
         </div>
 
         <ul class="nav-links" style="font-size: 0.8rem; gap: 20px;">
-          <li><a href="#hero" class="nav-link">Top</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#interests" class="nav-link">Interests</a></li>
-          <li><a href="#projects" class="nav-link">Projects</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li>
+            <a href="#hero" class="nav-link">
+              <span class="i18n-en">Top</span>
+              <span class="i18n-th">ด้านบน</span>
+            </a>
+          </li>
+          <li>
+            <a href="#about" class="nav-link">
+              <span class="i18n-en">About</span>
+              <span class="i18n-th">เกี่ยวกับ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#interests" class="nav-link">
+              <span class="i18n-en">Interests</span>
+              <span class="i18n-th">ความสนใจ</span>
+            </a>
+          </li>
+          <li>
+            <a href="#projects" class="nav-link">
+              <span class="i18n-en">Projects</span>
+              <span class="i18n-th">ผลงาน</span>
+            </a>
+          </li>
+          <li>
+            <a href="#contact" class="nav-link">
+              <span class="i18n-en">Contact</span>
+              <span class="i18n-th">ติดต่อ</span>
+            </a>
+          </li>
         </ul>
       </div>
 
       <div class="footer-colophon">
-        <span>Colophon: Built with semantic HTML5, modern CSS3, and vanilla JavaScript. Deployed statically on GitHub Pages.</span>
-        <span>Font: JetBrains Mono</span>
+        <span class="i18n-en">Colophon: Built with semantic HTML5, modern CSS3, and vanilla JavaScript. Deployed statically on GitHub Pages.</span>
+        <span class="i18n-th">Colophon: พัฒนาด้วย semantic HTML5, modern CSS3 และ vanilla JavaScript เผยแพร่ผ่าน GitHub Pages</span>
+        <span>Font: JetBrains Mono / Noto Sans Thai</span>
       </div>
 
     </div>

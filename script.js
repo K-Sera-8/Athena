@@ -4,12 +4,79 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
+  initLanguage();
   initNavbar();
   initActiveNav();
   initProjectDrawers();
   initEmailCopy();
   initBackToTop();
 });
+
+/**
+ * Internationalization (i18n) Language Switcher (EN <-> TH)
+ */
+function initLanguage() {
+  const langToggleButtons = document.querySelectorAll('.lang-switch-btn');
+
+  // Check URL query param -> localStorage -> default ('en')
+  const urlParams = new URLSearchParams(window.location.search);
+  const urlLang = urlParams.get('lang');
+  const storedLang = localStorage.getItem('athena_lang');
+  let currentLang = urlLang === 'th' || urlLang === 'en' ? urlLang : (storedLang || 'en');
+
+  setLanguage(currentLang);
+
+  langToggleButtons.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const activeLang = document.body.classList.contains('lang-th') ? 'th' : 'en';
+      const newLang = activeLang === 'en' ? 'th' : 'en';
+      setLanguage(newLang);
+    });
+  });
+}
+
+function setLanguage(lang) {
+  const isThai = lang === 'th';
+  
+  if (isThai) {
+    document.body.classList.remove('lang-en');
+    document.body.classList.add('lang-th');
+    document.documentElement.lang = 'th';
+  } else {
+    document.body.classList.remove('lang-th');
+    document.body.classList.add('lang-en');
+    document.documentElement.lang = 'en';
+  }
+
+  // Update button active state indicators
+  document.querySelectorAll('.lang-switch-btn').forEach(btn => {
+    const enLabel = btn.querySelector('.lang-opt-en');
+    const thLabel = btn.querySelector('.lang-opt-th');
+    if (enLabel && thLabel) {
+      if (isThai) {
+        enLabel.classList.remove('active');
+        thLabel.classList.add('active');
+      } else {
+        enLabel.classList.add('active');
+        thLabel.classList.remove('active');
+      }
+    }
+  });
+
+  // Save preference
+  try {
+    localStorage.setItem('athena_lang', lang);
+  } catch (e) {
+    // Local storage might be restricted in some iframe/file contexts
+  }
+
+  // Update URL parameter without reload
+  if (window.history && window.history.replaceState) {
+    const url = new URL(window.location.href);
+    url.searchParams.set('lang', lang);
+    window.history.replaceState(null, '', url.toString());
+  }
+}
 
 /**
  * Navigation Bar Scroll Effect & Mobile Menu Toggle
@@ -108,7 +175,7 @@ function initProjectDrawers() {
         // Collapse drawer
         drawer.classList.remove('active');
         button.classList.remove('expanded');
-        button.querySelector('.btn-text').textContent = 'Read Full Analytical Essay';
+        updateExpandButtonText(button, false);
         button.setAttribute('aria-expanded', 'false');
 
         // Smoothly scroll back to the project card top if needed
@@ -120,7 +187,7 @@ function initProjectDrawers() {
         // Expand drawer
         drawer.classList.add('active');
         button.classList.add('expanded');
-        button.querySelector('.btn-text').textContent = 'Collapse Essay';
+        updateExpandButtonText(button, true);
         button.setAttribute('aria-expanded', 'true');
       }
     });
@@ -140,7 +207,7 @@ function initProjectDrawers() {
       }
       if (mainExpandBtn) {
         mainExpandBtn.classList.remove('expanded');
-        mainExpandBtn.querySelector('.btn-text').textContent = 'Read Full Analytical Essay';
+        updateExpandButtonText(mainExpandBtn, false);
         mainExpandBtn.setAttribute('aria-expanded', 'false');
       }
 
@@ -149,6 +216,15 @@ function initProjectDrawers() {
       }
     });
   });
+}
+
+function updateExpandButtonText(button, isExpanded) {
+  const textContainer = button.querySelector('.btn-text');
+  if (textContainer) {
+    const enText = isExpanded ? 'Collapse Essay' : 'Read Full Analytical Essay';
+    const thText = isExpanded ? 'ย่อบทความ' : 'อ่านบทความวิเคราะห์ฉบับเต็ม';
+    textContainer.innerHTML = `<span class="i18n-en">${enText}</span><span class="i18n-th">${thText}</span>`;
+  }
 }
 
 /**
@@ -163,13 +239,16 @@ function initEmailCopy() {
       if (!email) return;
 
       navigator.clipboard.writeText(email).then(() => {
-        const originalText = btn.innerHTML;
+        const isThai = document.body.classList.contains('lang-th');
+        const originalHtml = btn.innerHTML;
         btn.classList.add('copied');
-        btn.innerHTML = '<span>&#10003; Copied!</span>';
+        btn.innerHTML = isThai 
+          ? '<span>&#10003; คัดลอกแล้ว!</span>' 
+          : '<span>&#10003; Copied!</span>';
 
         setTimeout(() => {
           btn.classList.remove('copied');
-          btn.innerHTML = originalText;
+          btn.innerHTML = originalHtml;
         }, 2200);
       }).catch(err => {
         console.error('Could not copy email to clipboard: ', err);
